@@ -1,0 +1,48 @@
+
+<extend name="Public/base" />
+<block name="title">管理员列表</block>
+<block name="main">
+  <div class="panel-body">
+       <div class="table-responsive">
+       	    <form>
+             管理员：<input type="text" name="adminname" value="">
+                     <input type="submit" value="查询">
+            </form>
+            <table class="table">
+            <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>管理员姓名</th>
+                    <th>管理员邮箱</th>
+                    <th>头像</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <foreach name='data' item='vo' >
+                <tr class="success">
+                    <td>{$vo['id']}</td>
+                    <td>{$vo['adminname']}</td>
+                    <td>{$vo['email']}</td>
+                    <td><img src="__PUBLIC__/{:empty($vo['pic']) ? 'default.jpg' : $vo['pic']}"</td>
+                    <td>{$vo['status']==1?'开启':'禁用'}</td>
+                    <td>
+                    <a href="{:U('Meizuadmin/edit',array('id'=>$vo['id']))}">修改</a>
+                    <span>|</span>
+                    <a href="{:U('Meizuadmin/del',array('id'=>$vo['id']))}">删除</a>
+                    <span>|</span>
+                    <a href="{:U('Meizuadmin/enable',array('id'=>$vo['id'],'status'=>$vo['status']))}">{$vo['status']==1?'禁用':'开启'}</a>
+                    <span>|</span>
+                    <a href="{:U('Meizuadmin/getgroup',array('id'=>$vo['id']))}">设置权限组</a>
+                    </td>
+                </tr>
+            </foreach>
+            <tr>
+                <td colspan="7">{$show}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>   						
+       						                  
+</block>

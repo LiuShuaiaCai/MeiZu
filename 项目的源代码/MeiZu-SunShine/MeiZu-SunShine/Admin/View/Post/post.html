@@ -1,0 +1,74 @@
+
+<extend name="Public/base" />
+<block name="title">评论列表</block>
+<block name="main">
+	<script src="__PUBLIC__/Home/js/jquery-1.11.3.min.js"></script>
+  <div class="panel-body">
+       <div class="table-responsive" style="height:800px">
+       							
+       							<form action="" method="get" style="display:inline">
+       							评论：<input type="text" name="title" value="">
+       									<input type="submit" value="查询">
+       							</form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<span>
+									历史记录 &nbsp;&nbsp;&nbsp;{$res}
+								</span>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<span>
+									今日发帖&nbsp;&nbsp;&nbsp;{$res1}
+								</span>
+                                <table class="table" width="500px;">
+                                    <thead>
+                                        <tr>
+                                            <th>编号</th>
+                                            <th>用户名</th>
+											<th>评论标题</th>
+                                            <th>评论内容</th>
+											<th>发帖时间</th>
+											<th>回复</th>
+                                            <th>状态</th>
+                                            <th style="position:relative;left:75px;">操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+										<foreach name="data" item="vo" key="k">
+                                        <tr class="success">
+                                            <td>{$vo.pid}</td>
+                                            <td>{$vo.userName}</td>
+											<td>{$vo.title}</td>
+                                            <td>{:htmlspecialchars_decode($vo['content'])}</td>
+											<td> {:date('Y-m-d H:i:s',$vo['time'])}</td>
+											<td><a href="{:U('Reply/reply')}?pid={$vo['pid']}">管理回复({$count[$k]})</a></td>
+                                            <td>{$vo[status]==1 ? 开启 : 禁用 }</td>
+                                            <td>
+                                            	<a href="{:U('Post/edit')}?pid={$vo['pid']}">修改</a>
+                                            	<span>|</span>
+                                            	<a href="{:U('Post/del')}?pid={$vo['pid']}" id="del">删除</a>
+                                            	<span>|</span>
+                                            	<a href="{:U('Post/status')}?id={$vo.pid}&status={$vo.status}">{$vo['status']==1 ? 禁用 : 开启}</a>
+												<span>|</span>
+                                            	<a href="{:U('Post/add')}?pid={$vo.pid}&add={$vo.add}" id="add">{$vo['add']==1 ? 加精 : 取消加精}</a>
+												<span>|</span>
+                                            	<a href="{:U('Post/top')}?pid={$vo.pid}&top={$vo.top}" id="top">{$vo['top']==1 ? 置顶 : 取消置顶}</a>
+                                            </td>
+                                        </tr>
+											
+										</foreach>
+										
+                                    </tbody>
+                                </table>
+								<script>
+									$('#del').click(function(){
+										if(confirm('确定要删除吗')){
+											window.location.href("{:U('Post/del')}?pid={$vo['pid']}");
+											return true;
+										}else{
+											return false;
+										}
+									})
+								</script>
+								<div>
+									{$show}
+								</div>
+                            </div>                     
+</block>

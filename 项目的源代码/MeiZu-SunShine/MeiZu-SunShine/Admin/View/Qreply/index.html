@@ -1,0 +1,43 @@
+
+<extend name="Public/base" />
+<block name="title">回复列表</block>
+<block name="main">
+  <div class="panel-body">
+       <div class="table-responsive">
+       							
+       							<form>
+       							回复内容：<input type="text" name="contents" value="" >
+       									<input type="submit" value="查询">
+       							</form>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>编号</th>
+                                            <th>回帖时间</th>
+                                            <th>回帖内容</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <foreach name='data' item='vo'>
+                                        <tr class="success">
+                                            <td>{$vo['id']}</td>
+                                            <td>{$vo['rtime']|date="Y-m-d H:i:s",###}</td>
+                                            <td>{:htmlspecialchars_decode($vo['contents'])}</td>
+                                            <td>
+                                            	<a href="{:U('Qreply/edit')}?id={$vo['id']}">修改</a>
+                                                <span>|</span>
+                                            	<a href="{:U('Qreply/del')}?id={$vo['id']}">删除</a>
+                                             
+                                            	<!-- <a href="">查看订单</a> -->
+                                            </td>
+                                        </tr>
+                                        
+                                      </foreach>
+                                      <tr>
+                                            <td colspan="5">{$show}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>                     
+</block>

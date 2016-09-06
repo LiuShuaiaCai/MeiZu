@@ -1,0 +1,108 @@
+/*banner轮播图*/
+$(function(){
+	var s=null;
+	var i=0;
+	function run(){
+		s=setInterval(function(){
+			//隐藏所有图片
+			$('.banner img').css('display','none');
+			//显示对应的图片
+			$('.banner img').eq(i).css('display','block');
+			$('.num li').eq(i).css('background','#00c3f5').siblings().css('background','#EEE');
+
+			//指针
+			i++;
+
+			//界限判断
+			if(i>=$('.banner img').length){
+				i=0;
+			}
+		},2000)
+	}
+	run();
+
+	//鼠标放在图片上
+	$('.banner img').mouseover(function(){
+		clearInterval(s);
+	}).mouseout(function(){
+		run();
+	})
+
+	//鼠标放在标识上
+	$('.num li').mouseover(function(){
+		clearInterval(s);
+
+		//鼠标的位置
+		i=$(this).index();
+
+		//隐藏所有图片
+		$('.banner img').css('display','none');
+
+		//显示对应的图片
+		$('.banner img').eq(i).css('display','block');
+		$('.num li').eq(i).css('background','#00c3f5').siblings().css('background','#EEE');
+	})
+
+	/*banner轮播图结束*/
+
+	/*banner侧栏*/
+	var m='';
+	var n;
+	$('.banner_2 a[class="a"]').each(function(index){
+		
+		$(this).mouseover(function(){
+			n=index;
+			// alert(n);
+			// alert(index);
+			m=setTimeout(function(){
+				$('.banner_4').eq(index).css('display','block');
+			},300)
+		}).mouseout(function(){
+			$('.banner_4').eq(index).css('display','none');
+			clearInterval(m);
+		})
+	})
+	$('.banner_4').mouseover(function(){
+		$(this).css('display','block');
+		$('.banner_2 a[class="a"]').eq(n).css('background','#FFF');
+	}).mouseout(function(){
+		$(this).css('display','none');
+		$('.banner_2 a[class="a"]').eq(n).css('background','');
+	})
+
+
+	// setInterval(function(){
+		// run3();
+	// 	if($('.hot_4').css('left')<0){
+	// 		$('.hot_4').animate({left:'0px'},'slow');
+	// 	}else{
+	// 		$('.hot_4').animate({left:'-1200px'},'slow');
+	// 	}
+	// 	console.log($('.hot_4').css('left'));
+	// },1000);
+	
+
+	$('#right').click(function(){
+		$('.hot_4').stop(true);
+		$('.hot_4').animate({left:'0px'},'slow');
+	})
+	$('#left').click(function(){
+		$('.hot_4').stop(true);
+		$('.hot_4').animate({left:'-1200px'},'slow');
+	})
+
+	$('.hot_3 a').mouseover(function(){
+		$('#more').css('color','#00c3f5');
+		$('#more img').css('top','-10px');
+	}).mouseout(function(){
+		$('#more').css('color','#333');
+		$('#more img').css('top','7px');
+	})
+})
+
+
+
+
+
+
+

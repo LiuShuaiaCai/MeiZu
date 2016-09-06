@@ -1,0 +1,45 @@
+
+<extend name="Public/base" />
+<block name="title">管理员分组列表</block>
+<block name="main">
+  <div class="panel-body">
+       <div class="table-responsive">
+       	    <form>
+             管理组：<input type="text" name="title" value="{:I('get.title')}" placeholder="请输入要查询的管理组名称">
+                     <input type="submit" value="查询">
+            </form>
+            <table class="table">
+            <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>组名</th>
+                    <th>等级</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <foreach name='data' item='vo' >
+                <tr class="success">
+                    <td>{$vo['id']}</td>
+                    <td>{$vo['title']}</td>
+                    <td>{$vo['rules']}</td>
+                    <td>
+                    <a href="{:U('Authgroup/edit',array('id'=>$vo['id']))}">修改</a>
+                    <span>|</span>
+                    <a href="{:U('Authgroup/del',array('id'=>$vo['id']))}">删除</a>
+                    <span>|</span>
+                    <a href="{:U('Authgroup/showedit',array('id'=>$vo['id']))}">查看权限</a>
+                    <span>|</span>
+                    <a href="{:U('Authgroup/showgroups',array('id'=>$vo['id']))}">查看组员</a>
+                    </td>
+                    </td>
+                </tr>
+            </foreach>
+            <tr>
+                <td colspan="4">{$show}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>   						
+       						                  
+</block>

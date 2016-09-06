@@ -1,0 +1,68 @@
+<extend name='Index/index' />
+<block name='title'>
+<title>魅族_商品分类</title>
+</block>
+<block name='css'>
+<link rel="stylesheet" href="__PUBLIC__/Home/css/type.css">
+</block>
+<block name='main'>
+	<div class="container type" >
+		<div class="row title">
+			<a href="{:U('Index/index')}">首页</a>
+			<span>></span>
+			商品分类
+		</div>
+		<div class="row type_1 tp" >
+			<ul>
+				<foreach name='typeData' item='vo'>
+					<a href="{:U('Type/type',array('id'=>$vo['id']))}" value="{$vo['id']}"><li class="li">{$vo['tname']}</li></a>
+				</foreach>	
+			</ul>
+		</div>
+		<foreach name='data' item='vo2'>
+		<div class="col-md-3 type_3">
+			<div class="type_4">
+				<div class="type_5">
+					<a href="{:U('Detail/detail')}?id={$vo2['id']}" >
+						<img src="__PUBLIC__/{$vo2['pic']}" alt="">
+					</a>
+				</div>
+				<div class="type_6"><a href="">{$vo2['gname']} </a></div>
+				<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥{$vo2['price']}</span></a></div>
+			</div>
+		</div>
+		</foreach>
+		
+
+	</div>
+	<!-- 热品推荐 -->
+			<div class="container" >
+				<div class="row hot" >
+					<div class="row hot_1">
+						<div class="hot_2">为您推荐</div>
+						<div class="hot_3">
+							<a href="javascript:void(0)"  id='left'><div><img src="__PUBLIC__/Home/images/arrow-r.png" alt=""></div></a>
+							<a href="javascript:void(0)"  id='right'><div style="margin-right:10px"><img src="__PUBLIC__/Home/images/arrow-l.png" alt=""></div></a>
+						</div>
+					</div>
+					<div class="row2">
+						<div class="row hot_4">
+							
+							<foreach name='datar' item='vo'>
+							<a href="" class="hot_5">
+								<img src="__PUBLIC__/{$vo['pic']}" alt="">
+								<div class="hot_7">
+									<h4>{$vo['gname']}</h4>
+									<h6>{$vo['desc']}</h6>
+									<p>¥{$vo['price']}</p>
+								</div>
+							</a>
+							</foreach>
+						</div>
+					</div>
+				</div>
+			</div>
+</block>
+<block name='js'>
+<script src="__PUBLIC__/Home/js/type.js"></script>
+</block>

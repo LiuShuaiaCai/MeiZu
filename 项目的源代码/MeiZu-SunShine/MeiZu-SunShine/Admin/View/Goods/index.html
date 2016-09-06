@@ -1,0 +1,93 @@
+<extend name="Public/base" />
+
+<block name="title">商品列表</block>
+<block name="main">
+  <div class="panel panel-default">
+        <div class="panel-heading">
+             商品列表
+        </div>
+        <div class="panel-body">
+            <div class="dataTable_wrapper">
+                <div class="dataTables_wrapper form-inline dt-bootstrap no-footer" id="dataTables-example_wrapper">
+                
+                <br>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <table aria-describedby="dataTables-example_info" role="grid" class="table table-striped table-bordered table-hover dataTable no-footer" id="dataTables-example">
+                        <thead>
+                          <tr role="row">
+                            
+                            <th aria-label="Platform(s): activate to sort column ascending" style="width: 150px;" colspan="1" rowspan="1" aria-controls="dataTables-example" tabindex="0" class="sorting">
+                              商品名称
+                            </th>
+                            <th aria-label="Engine version: activate to sort column ascending" style="width: 100px;" colspan="1" rowspan="1" aria-controls="dataTables-example" tabindex="0" class="sorting">
+                              添加时间
+                            </th>
+                                <th aria-label="Engine version: activate to sort column ascending" style="width: 80px;" colspan="1" rowspan="1" aria-controls="dataTables-example" tabindex="0" class="sorting">
+                                    状态
+                                </th>
+                                <th aria-label="Engine version: activate to sort column ascending" style="width: 80px;" colspan="1" rowspan="1" aria-controls="dataTables-example" tabindex="0" class="sorting">
+                                    热卖
+                                </th>
+                                <th aria-label="Engine version: activate to sort column ascending" style="width: 80px;" colspan="1" rowspan="1" aria-controls="dataTables-example" tabindex="0" class="sorting">
+                                    价格
+                                </th>
+                                <th aria-label="Engine version: activate to sort column ascending" style="width: 100px;" colspan="1" rowspan="1" aria-controls="dataTables-example" tabindex="0" class="sorting">
+                                    描述
+                                </th>
+                                <th aria-label="Engine version: activate to sort column ascending" style="width: 60px;" colspan="1" rowspan="1" aria-controls="dataTables-example" tabindex="0" class="sorting">
+                                    库存量
+                                </th>
+                                <th aria-label="Engine version: activate to sort column ascending" style="width: 100px;" colspan="1" rowspan="1" aria-controls="dataTables-example" tabindex="0" class="sorting">
+                                    图片
+                                </th>
+                                
+                            <th aria-label="CSS grade: activate to sort column ascending" style="width: 170px;" colspan="1" rowspan="1" aria-controls="dataTables-example" tabindex="0" class="sorting">
+                              操作
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <foreach name="data" item="vo">
+                            <tr role="row" class="gradeA odd">
+                                
+                                <td>{$vo['tname']}</td>
+                                <td>{$vo['addtime']|date="Y-m-d",###}</td>
+                                <td>{$vo['status']==1 ? '上架' : '下架'}</td>
+                                <td>{$vo['hot']==1 ? '在线' : '热卖'}</td>
+                                <td>{$vo['price']}</td>
+                                <td>{$vo['desc']}</td>
+                                <td>{$vo['num']}</td>
+                                <td><img src="__PUBLIC__/{:empty($vo['pic']) ? 'default.jpg' : $vo['pic']}" width="80" alt="" height="30"></td>
+                                
+                                <td><a href="{:U('Goods/editG',array('id'=>$vo['tid'],'name'=>$vo['tname']))}">修改</a>&nbsp;&nbsp;&nbsp;<a href="{:U('Drop/enable')}?id={$vo['id']}&dels={$vo['dels']}
+                    ">{$vo['dels']==1?'加入回收站':'恢复'}</a>&nbsp;&nbsp;&nbsp;</td>
+                            </tr>
+                            </tr>
+                            </foreach>
+                        </tbody>
+                        </table>
+                    </div>
+                    </div>
+                  <div class="row">
+                            <div class="col-sm-8">
+                                <div aria-live="polite" role="status" id="dataTables-example_info" class="dataTables_info">
+                                </div>
+                            </div>
+                        <div class="col-sm-4">
+                            <div id="dataTables-example_paginate" class="dataTables_paginate paging_simple_numbers">
+                                <ul class="pagination">
+                                    <li id="dataTables-example_previous" tabindex="0" aria-controls="dataTables-example" class="paginate_button previous disabled">
+                                        <tr>
+                                            <td>{$show}</td>
+                                        </tr>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>

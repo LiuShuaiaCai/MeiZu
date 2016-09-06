@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="__PUBLIC__/home/css/reply.css" type="text/css" rel="Stylesheet">
+		<script src="__PUBLIC__/Home/js/jquery-1.11.3.min.js"></script>
+		<!-- 引入百度编辑器的js文件 -->
+		<script src="__PUBLIC__/UEditor/ueditor.config.js"></script>
+		<script src="__PUBLIC__/UEditor/ueditor.all.min.js"></script>
+		<script src="__PUBLIC__/Home/js/xcConfirm.js"></script>
+		<link href="__PUBLIC__/Home/css/xcConfirm.css" type="text/css" rel="Stylesheet"/>
+		
+	</head>
+	<body>
+		<div class="total">
+			<div class="top">
+				<div class="left">
+					<a href='{:U("Index/index")}'><img src="__PUBLIC__/Home/images/logo.png">
+				</div>
+				<div class="right">
+					<span>
+						<a href="{:U('Index/index')}" class="font">魅族商城</a>
+					</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span>
+						<a href="" class="font">魅族手机</a>
+					</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span>
+						<a href="{:U('Index/index')}" class="font">首页</a>
+					</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span>
+						<a href="{:U('Login/login')}" class="font">登陆</a>
+					</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span>
+						<a href="{:U('Register/register')}" class="font">注册</a>
+					</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</div>
+			</div>
+			<a href="{:U('Post/post')}?id={$_GET['id']}" style="text-decoration:none;"><div style='margin-left: 100px'>返回上一页</div></a>
+			<div class="main">
+				<div style="background-color:white; color:#999999;"> 互动社区</div>
+
+				<div class="message">
+					<div class="img">
+						<img src="__PUBLIC__/{:empty($data['photo'])?'default.jpg':$data['photo']}" width="100px" height="100px">
+					</div>
+					<div class="title">
+						<div style="font-size:20px">{$data.title}</div>
+					</div>
+					<div style="float:right;margin-right:100px;color:orange;">
+						楼主
+					</div>
+					<br>
+					<div class="fabiao" style="font-size:16px">
+						本贴由&nbsp;{$data.userName}&nbsp;发表于&nbsp;{:date('Y-m-d H:i:s',$data['time'])}
+					</div>
+					<div class="time">
+						<span style="font-size:16px"> 
+						<if condition="$days neq 0">
+						{$days}天前</span>
+						<else/>
+						今天</span>
+						</if>
+						
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span style="font-size:16px">回复 {$count}</span>
+					</div>
+					<div style="position:relative;left:600px;top:40px">
+						<a href="javascript:void(0)"><img src="__PUBLIC__/Home/images/like.jpg"  width="30px" height="30px" id="like"></a><span>+{$data['like']}</span>
+					</div>
+				</div>
+				<form>
+					<input type="hidden" value="{$data['pid']}" id="point">
+				</form>
+				<script>
+					$(function(){
+						var pid=$('#point').val();
+						$('#like').click(function(){
+							$.get("{:U('Reply/demo')}",function(msg){
+								if(msg=='no'){
+									var txt= "请您先登录";
+								window.wxc.xcConfirm(txt, window.wxc.xcConfirm.typeEnum.warning);
+								}else{
+									$.get("{:U('Post/like')}?pid="+pid,function(msg){
+									if(msg=='yes'){
+										location.reload();
+									}
+								
+									})
+								}
+							})
+							
+						})
+					})
+				</script>
+				<div  class="content">
+					<pre>{:htmlspecialchars_decode($data['content'])}</pre>
+					<div class="button">
+						<button id="button">回复</button>
+					</div>
+				</div>
+				<div class="replay">
+					<if condition="$count eq 0">
+					<div class="repCon">
+							<span style="font-size:20px; font-weight:bold;font-family:华文彩云;color:orange ">现在还没有坐沙发的，来第一个坐沙发吧！ * —— *</span>
+					</div>
+					<!--<volist name="data1" id="vo">
+					<div class="repCon">
+						asdasdas
+					</div>
+					</volist>-->
+					<else/>
+					
+					<volist name="data1" id="vo" key="k">
+					<div class="repCon">
+						<div class="img">
+							<img src="__PUBLIC__/{:empty($vo['photo'])?'default.jpg':$vo['photo']}" width="100px" height="100px">
+						</div>
+						<div class="username">
+								<span style="color:#32A5EF; font-size:20px;">{$vo.userName}</span>
+								<span class="score">积分:<span style="color:orange">{$vo.score}</span></span>
+						</div>
+						<div class="floor" style="color:orange;">
+					
+							
+							<switch name="k">
+								<case value="1">沙发</case>
+								<case value="2">地板</case>
+								<case value="3">凉席</case>
+								<case value="4">下水道</case>
+								<default/>{$k}楼
+								
+								
+							</switch>
+						</div>
+						<div class="rep">
+							{:htmlspecialchars_decode($vo['content'])}
+						</div>
+						
+						
+						<div style="float:right;margin-left:20px;">
+							<a href="{:U('Revert/revert')}?zid={$vo['id']}" style="text-decoration:none;">查看回复</a>
+						</div>
+						<div style="float:right;">
+							{:date('Y-m-d H:i:s',$vo['rtime'])}
+						</div>
+						<div style="position:relative;left:500px;top:70px">
+							<a href="javascript:void(0)"><img src="__PUBLIC__/Home/images/like.jpg"  width="30px" height="30px" id="Img{$vo['id']}"></a><span>+{$vo['like']}</span>
+						</div>
+						<div style="margin-top:80px">
+							<button id="button{$vo['id']}">回复</button>
+						</div>
+					</div>
+					<!--回复功能-->
+					<div class="editor{$vo['id']}" id="RepEditor" style="display:none">		
+						<!--<form action="{:U('Revert/add')}" method="post">
+						<input type="hidden" name="pid" value="{$_GET['pid']}">
+						<input type="hidden" name="uid" value="{$_GET['id']}">
+						<input type="hidden" name="id" value="{$vo['id']}">
+						</form>-->	
+						<!-- 加载编辑器的容器 -->
+						<div id="id{$vo['id']}" style="display:none">{$vo['id']}</div>
+						<textarea class="text" placeholder="请输入评论内容" name="content" id="content{$vo['id']}"></textarea>
+						<button id="but{$vo['id']}">提交</button>
+						</form>	
+					</div>
+					<script>
+						$(function(){
+							var pid={$_GET['pid']};
+							var uid={$_GET['id']};
+							var id=$("#id{$vo['id']}").text();
+							//var content=$("content{$vo['id']}").text();
+							$("#button{$vo['id']}").click(function(){
+								
+								$.get("{:U('Reply/demo')}",function(msg){
+									if(msg=='no'){
+								var txt= "请您先登录";
+								window.wxc.xcConfirm(txt, window.wxc.xcConfirm.typeEnum.warning);
+									
+								}else{
+									var ue = UE.getEditor('container',{
+								toolbars: [
+								['fullscreen', 'source', 'undo', 'redo', 'bold'],
+								['snapscreen','date','simpleupload','insertimage'],
+								['emotion']
+								]
+								
+							});
+							$(".editor{$vo['id']}").css('display','block');
+							$("#content{$vo['id']}").blur(function(){
+							var content=$("#content{$vo['id']}").val();
+							$("#but{$vo['id']}").click(function(){
+								$.get("{:U('Revert/add')}",{pid:pid,uid:uid,id:id,content:content},function(msg){
+										if(msg=='yes'){
+											
+											var txt= "回复成功";
+											window.wxc.xcConfirm(txt, window.wxc.xcConfirm.typeEnum.success);
+											
+										}else{
+											var txt= "回复失败";
+											window.wxc.xcConfirm(txt, window.wxc.xcConfirm.typeEnum.warning);
+										}
+									})
+								
+								})
+							})
+										
+									
+								}
+						
+						})
+					})
+				})	
+				
+					</script>
+					<!--回复结束-->
+					<!--点赞功能-->
+					<script>
+					$(function(){
+						
+						$("#Img{$vo['id']}").click(function(){
+							$.get("{:U('Reply/demo')}",function(msg){
+								if(msg=='no'){
+									var txt= "请您先登录";
+								window.wxc.xcConfirm(txt, window.wxc.xcConfirm.typeEnum.warning);
+								}else{
+									$.get("{:U('Reply/like')}?id="+{$vo['id']},function(msg){
+									if(msg=='yes'){
+										location.reload();
+									}
+								
+							})
+								}
+							})
+							
+						})
+					})
+					</script>
+					<!-- 点赞结束-->
+					
+					</volist>
+					</if>
+					<div class="page">
+						{$show}
+					</div>
+					<div class="editor" style="display:none">		
+						<form action="{:U('Reply/add')}" method="post" id="RepForm">
+						
+						<input type="hidden" name="id" value="{$_GET['id']}" id="id">
+						<input type="hidden" name="pid" value="{$_GET['pid']}" id="pid">
+						
+						<script id="container" name="content" type="text/plain"></script>
+						<input type="submit" value="提交">
+						</form>
+						
+						
+					</div>	
+					
+					<script>
+						$(function(){
+							var pid=$('#pid').val();
+							var id=$('#id').val();
+							var content=$('#container').text();
+							$('#button').click(function(){
+								
+								$.get('{:U('Reply/demo')}',function(msg){
+									if(msg=='no'){
+								var txt= "请您先登录";
+								window.wxc.xcConfirm(txt, window.wxc.xcConfirm.typeEnum.warning);
+							
+								}else{
+								$.get('{:U('Reply/demo2')}?pid='+pid,function(msg){
+									if(msg['cstatus']=='2' && msg['uid']!=id){
+										var txt= "亲，楼主已禁止了回复哦";
+										window.wxc.xcConfirm(txt, window.wxc.xcConfirm.typeEnum.warning);
+									}else{
+									
+									var ue = UE.getEditor('container',{
+								toolbars: [
+								['fullscreen', 'source', 'undo', 'redo', 'bold'],
+								['snapscreen','date','simpleupload','insertimage'],
+								['emotion']
+								]
+								
+							});
+									$('.editor').css('display','block');
+								
+									}
+								
+							})
+							
+								
+						}
+						
+					})
+				})	
+			})				
+					</script>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>

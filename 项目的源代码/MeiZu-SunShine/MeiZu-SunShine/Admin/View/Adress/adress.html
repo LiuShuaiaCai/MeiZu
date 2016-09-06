@@ -1,0 +1,44 @@
+
+<extend name="Public/base" />
+<block name="title">地址列表</block>
+<block name="main">
+  <div class="panel-body">
+       <div class="table-responsive">
+       							
+       							<form action="" method="get">
+       							地址：<input type="text" name="userName" value="">
+       									<input type="submit" value="查询">
+       							</form>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>编号</th>
+                                            <th>用户名</th>
+                                            <th>收件人</th>
+                                            <th>收件人电话</th>
+                                            <th>收件人地址</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <foreach name='data' item='vo'>
+                                        <tr class="success">
+                                            <td>{$vo['id']}</td>
+                                            <td>{$vo['userName']}</td>
+                                            <td>{$vo['person']}</td>
+                                            <td>{$vo['aphone']}</td>
+                                            <td>
+                                            {$vo['province']} {$vo['city']} {$vo['county']} {$vo['town']} {$vo['more']}
+                                            </td>
+                                            <td>
+                                            	<a href="{:U('Adress/edit')}?id={$vo['id']}">修改</a>
+                                            	<span>|</span>
+                                            	<a href="{:U('Adress/delete')}?id={$vo['id']}">删除</a>
+                                            </td>
+                                        </tr>
+                                      </foreach>
+                                      <tr>{$show}</tr>
+                                    </tbody>
+                                </table>
+                            </div>                     
+</block>

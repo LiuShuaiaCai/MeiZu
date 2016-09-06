@@ -1,0 +1,47 @@
+
+<extend name="Public/base" />
+<block name="title">回复列表</block>
+<block name="main">
+  <div class="panel-body">
+       <div class="table-responsive">
+       							
+       							<form action="{:U('Reply/reply')}" method="get">
+       							回复：<input type="text" name="content" value="">
+       									<input type="submit" value="查询">
+										<input type="hidden" name="pid" value="{$id}">
+       							</form>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>编号</th>
+                                            <th>用户名</th>
+                                            <th>回复内容</th>
+											<th>回复时间</th>
+                                            <th>状态</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+										<foreach name="data" item="vo">
+                                        <tr class="success">
+                                            <td>{$vo.id}</td>
+                                            <td>{$vo.userName}</td>
+                                            <td>{:htmlspecialchars_decode($vo[content])}</td>
+											<td>{:date('Y-m-d H:i:s',$vo[rtime])}</td>
+                                            <td>{$vo['status']==1 ? '开启' : '禁用'}</td>
+                                            <td>
+                                            	
+                                            	<a href="{:U('Reply/delete')}?id={$vo['id']}">删除</a>
+                                            	<span>|</span>
+                                            	<a href="{:U('Reply/status')}? id={$vo['id']}&status={$vo['status']}">{$vo['status']==1 ? '禁用' : '开启'}</a>
+                                            </td>
+                                        </tr>
+                                      </foreach>
+									  
+                                    </tbody>
+                                </table>
+								<div >
+											{$show}
+									  </div>
+                            </div>                     
+</block>

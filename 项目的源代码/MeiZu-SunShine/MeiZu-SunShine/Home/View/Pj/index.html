@@ -1,0 +1,94 @@
+	<!-- 继承首页 -->
+	<extend name='Index/index'/>
+	
+	<!-- 引入头部 -->
+	{:W('Public/header')}
+	<block name='main'>
+	<div style="height:1000px;width:1000px">
+		<div class="pj_one"></div>
+		<div class="pj_two">商品评价</div>
+		<div class="pj_three"></div>
+		<div class="pj_four">
+			<form action="{:U('Pj/insert')}" method="post">
+			<input type="hidden" name="username" value="{$username}">
+			<input type="hidden" name="photo" value="{$photo}">
+			<input type="hidden" name="gid" value="{$gid}">
+			
+			<div class="left">
+				
+				<div class="shang">
+					
+					<div style="width:70px;height:70px;border:1px solid #E1E1E1;margin:10px 0px 10px 20px;float:left;"><img src="__PUBLIC__/{$pic}" alt="" width="70px" heihgt="70px"></div>
+					
+					<div style="float:left;">
+						<ul style="list-style:none;">
+							<li style="height:40px;margin:10px 0px;">{$gname}</li>
+							<li><span>版本：{$style}</span>&nbsp;&nbsp<span>颜色：{$color}</span>&nbsp;&nbsp<span>存储：{$memory}</span></li>
+						</ul>
+					</div>
+					
+				</div>
+				
+				<div class="xia" style="margin-left:20px;">商品评价:<br/> <script id="container" name="content" type="text/plain"></script>
+    </div>
+			</div>
+			<div class="right">
+				<ul>
+					<li style="color:red"><span style="color:#000">描述相符：</span>
+						<input type="radio" name="desc" value="1">一星
+						<input type="radio" name="desc" value="2">二星
+						<input type="radio" name="desc" value="3">三星
+						<input type="radio" name="desc" value="4">四星
+						<input type="radio" name="desc" value="5">五星
+					</li>
+					<li style="color:red"><span style="color:#000">质量满意：</span>
+						<input type="radio" name="quality" value="1">一星
+						<input type="radio" name="quality" value="2">二星
+						<input type="radio" name="quality" value="3">三星
+						<input type="radio" name="quality" value="4">四星
+						<input type="radio" name="quality" value="5">五星
+					</li>
+					<li style="color:red"><span style="color:#000">价格合理：</span>
+						<input type="radio" name="price" value="1">一星
+						<input type="radio" name="price" value="2">二星
+						<input type="radio" name="price" value="3">三星
+						<input type="radio" name="price" value="4">四星
+						<input type="radio" name="price" value="5">五星
+					</li>
+					
+					<li style="color:red"><span style="color:#000">服务周到：</span>
+						<input type="radio" name="service" value="1">一星
+						<input type="radio" name="service" value="2">二星
+						<input type="radio" name="service" value="3">三星
+						<input type="radio" name="service" value="4">四星
+						<input type="radio" name="service" value="5">五星
+					</li>
+				</ul>
+			</div>
+		</div>
+		<input type="hidden" name="ptime" value="{:time()}">
+		<input type="submit" value="发表评价" style="margin-left:160px;margin-top:170px">
+		</form>
+		<!-- 引入百度编辑器的js文件 -->
+		<script src="__PUBLIC__/UEditor/ueditor.config.js"></script>
+		<script src="__PUBLIC__/UEditor/ueditor.all.min.js"></script>
+
+		 <!-- 实例化编辑器 -->
+	    <script type="text/javascript">
+    	// container是script标签的id值
+        var ue = UE.getEditor('container',{
+        	/*toolbars: [
+			    ['fullscreen', 'source', 'undo', 'redo', 'bold'],
+			    ['snapscreen','date','simpleupload','insertimage'],
+			    ['emotion']
+			]*/
+        });
+    </script>
+	</div>
+	</block>
+
+	<!-- 引入尾部 -->
+	{:W('Public/footer')}
+	
+</body>
+</html>

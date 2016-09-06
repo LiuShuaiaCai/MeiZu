@@ -1,0 +1,36 @@
+
+<extend name="Public/base" />
+
+<block name="title">订单详情</block>
+<block name="main">
+    <a href="{:U('Order/order')}">返回上一层</a>
+    <div class="panel-body">
+    <foreach name='check' item='vo'>
+      <div class="watch">
+        <div class='look_user'>
+            <span class="userName">用户名：{$vo['userName']}</span>
+            <span class="userPhone">电话：{$vo['phone']}</span>
+        </div>
+        <div class='look_goods'>
+            <div>
+                <img src="__PUBLIC__/{$vo['pic']}" alt=""><br>
+                <div class="good">
+                    <span class="gname">商品：{$vo['gname']}</span><br>
+                    <span class="gstyle">样式：{$vo['desc']} {$vo['desc']} {$vo[net]} {$vo['color']} {$vo['mem']} X {$vo['snum']}</span><br>
+                    <span class="gstyle">价格：{$vo['price']}</span><br>
+                    <span class="gstyle">订单号：{$vo['number']}</span><br>
+                    <span class="gstyle">订单时间：{$vo['orderTime']|date='Y-m-d h:i:s',###}</span>
+                </div>
+            </div>
+        </div>
+        <div class='look_name'>
+            <span class='look_person'>收货人：{$vo['person']}</span>
+            <span class="look_aphone">联系方式：{$vo['aphone']}</span>
+        </div>
+        <div class='look_adress'>
+        收货地址：{$vo['province']} {$vo['city']} {$vo['county']} {$vo['town']} {$vo['more']}
+        </div>
+      </div>
+    </foreach>
+    </div>
+</block>

@@ -1,0 +1,13 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class BannerController extends Controller {
+    public function index(){
+    	$banner=M('banner');
+    	$data=$banner->select();
+    	dump($data);
+    	echo "aa";
+    	$this->assign('data',$data);
+    	$this->display();
+    }
+}

@@ -1,0 +1,13 @@
+<?php
+return array(
+		'DB_TYPE'   => 'pdo', // 数据库类型
+	'DB_DSN'    => 'mysql:host=192.168.129.52;dbname=meizu;charset=utf8',
+	'DB_USER'   => 'liuchao', // 用户名
+	'DB_PWD'    => '123456', // 密码
+	'DB_PREFIX' => 'meizu_', // 数据库表前缀 
+
+	// 关闭字段缓存
+	'DB_FIELDS_CACHE'=>false,
+	'SHOW_PAGE_TRACE'=>true,
+	
+);

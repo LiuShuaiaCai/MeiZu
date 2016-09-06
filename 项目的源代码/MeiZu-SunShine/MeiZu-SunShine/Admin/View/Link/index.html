@@ -1,0 +1,45 @@
+
+<extend name="Public/base" />
+<block name="title">链接列表 <br> <a href="{:U('Link/add')}" style="font-size:20px">添加链接</a></block>
+
+<block name="main">
+  <div class="panel-body">
+    <div class="table-responsive">
+        <form action="" method="get">
+            管理员：<input type="text" name="linkname" value="{:I('get.linkname')}">
+             <input type="submit" value="查询">
+        </form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>链接名称</th>
+                    <th>链接地址</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+            <foreach name="data" item="value">
+            <tr class="success">
+                <td>{$value['id']}</td>
+                <td>{$value['linkname']}</td>
+                <td>{$value['link']}</td>
+                <td>{$value['status']==1?'开启':'禁用'}</td>
+                <td>
+                    <a href="{:U('Link/edit',array('id'=>$value['id']))}">修改</a>
+                    <span>|</span>
+                    <a href="{:U('Link/del',array('id'=>$value['id']))}">删除</a>
+                    <span>|</span>
+                    <a href="{:U('Link/enable')}?id={$value['id']}&status={$value['status']}
+                    ">{$value['status']==1?'禁用':'启用'}</a>
+                </td>
+            </tr>
+            </foreach>
+        </tbody>
+            <tr>
+                <td colspan="6">{$show}</td>
+            </tr>
+        </table>
+    </div>                     
+</block>

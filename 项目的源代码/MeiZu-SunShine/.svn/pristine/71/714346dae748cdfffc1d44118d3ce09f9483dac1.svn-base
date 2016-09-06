@@ -1,0 +1,13 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+class IndexController extends Controller {
+     public function edit()
+    {
+    	//1.实例化
+    	dump($_POST);
+    	$admin = M('admin');
+    	$data =$admin->select();
+    	dump($data);
+    }
+}

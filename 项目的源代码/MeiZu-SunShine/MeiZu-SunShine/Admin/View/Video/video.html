@@ -1,0 +1,49 @@
+
+<extend name="Public/base" />
+<block name="title">视频列表</block>
+<block name="main">
+  <div class="panel-body">
+  <script src="__PUBLIC__/Home/js/jquery-1.11.3.min.js"></script>
+       <div class="table-responsive">
+								<div>
+									<form action="{:U('Video/video')}" method="get">
+										<input type="text" name="content">
+										<input type="submit" value="搜索">
+									</form>
+								</div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>编号</th>
+                                            <th>视频</th>
+                                            <th>视频描述</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+										<foreach name="data" item="vo">
+                                        <tr class="success" >
+                                            <td style="line-height:200px"><div>{$vo.id}</div></td>
+                                            <td>
+												<video controls="controls" width="200px" height="200px">
+													<source src="__PUBLIC__/{$vo['src']}" type="video/webm" />
+												</video>
+											</td>
+                                            <td style="line-height:200px;"><div>{$vo.content}</div></td>
+                                            <td style="line-height:200px;">
+												<div>
+                                            	<a href="{:U('Video/update')}?id={$vo.id}">更新</a>
+                                            	<span>|</span>
+                                            	<a href="{:U('Video/delete')}?id={$vo.id}" id="del">删除</a>
+                                            	</div>
+                                            </td>
+                                        </tr>
+										
+										</foreach>
+                                    </tbody>
+                                </table>
+								<div>
+									{$show}
+								</div>
+                            </div>                     
+</block>

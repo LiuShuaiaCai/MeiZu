@@ -1,0 +1,47 @@
+
+<extend name="Public/base" />
+<block name="title">问题分类</block>
+<block name="main">
+  <div class="panel-body">
+       <div class="table-responsive">
+       							
+       							<form>
+       							问题名称：<input type="text" name="tname" value="" placeholder="请输出问题名称">
+       									<input type="submit" value="查询">
+       							</form>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>编号</th>
+                                            <th>问题分类</th>
+                                            <th>添加时间</th>
+                                            <th>图片</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <foreach name='data' item='vo'>
+                                        <tr class="success">
+                                            <td>{$vo['id']}</td>
+                                            <td>{$vo['tname']}</td>
+                                            <td>{$vo['addtime']|date="Y-m-d H:i:s",###}</td>
+                                            <td>{$vo['pic']}</td>
+                                            <!-- <td>{$vo['status']==1?'开启':'禁用'}</td> -->
+                                            <td>
+                                            	<a href="{:U('Qtype/edit')}?id={$vo['id']}">修改</a>
+                                                <span>|</span>
+                                            	<a href="{:U('Qtype/del')}?id={$vo['id']}">删除</a>
+                                              <!-- <a href="{:U('Qtype/jinyong',array('id'=>$vo['id'],'status'=>$vo['status']))}">{$vo['status']==1?'禁用':'开启'}</a> -->
+                                             
+                                            	<!-- <a href="">查看订单</a> -->
+                                            </td>
+                                        </tr>
+                                        
+                                      </foreach>
+                                      <tr>
+                                            <td colspan="6">{$show}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>                     
+</block>

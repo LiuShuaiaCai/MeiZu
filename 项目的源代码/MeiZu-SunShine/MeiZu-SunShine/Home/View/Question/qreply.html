@@ -1,0 +1,83 @@
+
+<extend name="Index/index" />
+<block name="main">
+
+	<!--内容开始左侧部分-->
+
+	<div class="body04">
+			<div class="body0401">
+				<span class="span1">{$data['userName']}</span>
+				<img src="__PUBLIC__/{$data['photo']}" style="width:80px;height:80px" />
+			</div>
+			<div class="body0402">
+				<span class="span3"><span>楼主</span> 发表于：{:date('Y-m-d H:i:s',$data['ctime'])}</span>
+				<div>
+					<span>
+					{:htmlspecialchars_decode($data['content'])}
+					</span>
+				</div>
+			</div>
+		</div>	
+		
+
+		<volist name="data1" id="vo1" key="k">
+		<div class="body04">
+			<div class="body0401">
+				<span class="span1">{$vo1['userName']}</span>
+				<img src="__PUBLIC__/{:!empty($vo1['photo'])?$vo1['photo']:'default.jpg'}" style="width:80px;height:80px" />
+			</div>
+			<div class="body0402">
+				<span class="span3"><span>
+					<switch name="k">
+						<case value="1">
+						沙发
+						</case>
+						<case value="2">
+						板凳
+						</case>
+						<case value="3">
+						凉席
+						</case>
+						<default />
+						{$k}楼	
+					</switch>
+				</span> 发表于：{:date('Y-m-d H:i:s',$vo1['rtime'])}</span>
+				<div>
+					<span>
+						{:htmlspecialchars_decode($vo1['contents'])}
+					</span>
+				</div>
+			</div>
+		</div>	
+		</volist>
+		
+		
+		<div style="width:960px;height:100px; margin:0 auto;margin-bottom:150px;">
+			<form action="{:U('Question/doqreply')}" method="post">
+			<input type="hidden" name="pid" value="{:I('get.id')}">
+			<input type="hidden" name="uid" value="{:I('get.uid')}">
+			<input type="hidden" name="tid" value="{:I('get.tid')}">
+			<!-- 加载编辑器的容器 -->
+
+    			<script id="container" name="contents" type="text/plain"></script>
+    
+				<input type="submit" value="回复">
+				
+				<a class="fanhui" href="{:U('Question/qpost',array('tid'=>$tid))}">返回上页</a>
+			</form>
+
+			
+			<!-- 引入百度编辑器的js文件 -->
+			<script src="__PUBLIC__/UEditor/ueditor.config.js"></script>
+			<script src="__PUBLIC__/UEditor/ueditor.all.min.js"></script>
+
+	 		<!-- 实例化编辑器 -->
+    		<script type="text/javascript">
+    			// container是script标签的id值
+        		var ue = UE.getEditor('container',{
+        	
+       		 });
+    		</script>
+		</div>
+
+</block>

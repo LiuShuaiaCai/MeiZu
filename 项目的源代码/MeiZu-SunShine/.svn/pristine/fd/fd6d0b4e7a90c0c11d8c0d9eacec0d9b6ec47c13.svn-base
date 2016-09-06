@@ -1,0 +1,129 @@
+<?php
+		namespace Home\Controller;
+		use Think\Controller;
+		header('content-type:text/html;charset="utf-8"');
+		class RegisterController extends Controller
+		{	
+			
+			public function login()
+			{
+				$this->display();
+			}
+			//登陆页面
+			
+			
+			public function code()
+				
+			{
+				$config=array(
+					'length'=>4,
+					'useNoise'=>false,
+					'useCurve'=>false,
+				);
+				$verify=new \Think\Verify($config);
+				
+				$verify->entry();
+				
+				
+			}
+			
+			//用户注册页面
+			public function register()
+			{
+				$this->display();
+				
+			}
+			
+			public function yzm()
+			{
+				$verify=new \Think\Verify();
+				
+				if(!$verify->check($_POST['yzm'])){
+					$this->error('验证码输入错误');
+					
+				}else{
+					header("location:{:U('Register/add')}");
+				}
+			}
+			
+			//用户添加方法(用户注册)
+			public function add()
+			{
+			
+			
+				$verify=new \Think\Verify();
+				
+				if(!$verify->check($_POST['yzm'])){
+					$this->error('验证码输入错误');
+				}else{
+				$user=M('user');//实例化model类
+				//获取数据
+				$data['userName']=I('post.userName');
+				
+				$data['phone']=I('post.phone');
+				
+				$data['password']=md5(I('post.password'));
+				
+				
+				
+				$data1=I('post.yzm');
+				
+				$res=$user->create();//创建数据对象;
+				
+				if($res){
+					
+					$res1=$user->add($data);
+					if($res1){
+						
+						$this->redirect('Login/login',5, '页面跳转中...');
+						
+					}else{
+						$this->error('注册失败');
+					}
+				}else{
+					 exit($User->getError());
+				}
+				
+				}
+										
+			}	
+			
+			
+			//处理Ajax方法
+			public function check()
+			{
+				$user=M('user');
+				$where['userName']=I('get.userName');
+				
+				
+				$data=$user->where($where)->select();
+				
+				
+				if($data){
+					$this->ajaxReturn('yes');
+				}else{
+					$this->ajaxReturn('no');
+				}
+			
+			}
+			
+			public function phone()
+			{
+				$user=M('user');
+				
+				
+				$where['phone']=I('get.phone');
+				
+				$data=$user->where($where)->select();
+				
+				if($data){
+					echo 'yes';
+				}else{
+					echo 'no';
+				}
+				
+				
+			}
+		
+		}
+?>

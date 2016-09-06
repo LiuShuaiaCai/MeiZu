@@ -1,0 +1,376 @@
+[ 2016-03-07T08:25:42+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001184s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.004198s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001036s ]
+
+[ 2016-03-07T08:25:55+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003807s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 17 AND `status` = 1  [ RunTime:0.000370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001058s ]
+
+[ 2016-03-07T08:25:55+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003722s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 17 AND `status` = 1  [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001236s ]
+
+[ 2016-03-07T08:25:56+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002021s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.005752s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 11 AND `status` = 1  [ RunTime:0.000963s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001459s ]
+
+[ 2016-03-07T08:25:56+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002230s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003858s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2016-03-07T09:32:22+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001238s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.004537s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 11 AND `status` = 1  [ RunTime:0.000634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000956s ]
+
+[ 2016-03-07T09:32:47+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001346s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.005931s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 39 AND `status` = 1  [ RunTime:0.000456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001102s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001168s ]
+
+[ 2016-03-07T09:32:47+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003249s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.004383s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 33 AND `status` = 1  [ RunTime:0.000667s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001181s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001237s ]
+
+[ 2016-03-07T09:32:47+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001835s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003452s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 23 AND `status` = 1  [ RunTime:0.000341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000979s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2016-03-07T09:32:47+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001596s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.004719s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 17 AND `status` = 1  [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000907s ]
+
+[ 2016-03-07T09:52:44+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001218s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003684s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-07T09:52:51+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003428s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001039s ]
+
+[ 2016-03-07T09:53:03+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001596s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003929s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.000466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001069s ]
+
+[ 2016-03-07T09:54:29+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003542s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 39 AND `status` = 1  [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2016-03-07T09:54:43+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001469s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.004175s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 17 AND `status` = 1  [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2016-03-07T09:54:43+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001226s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003702s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 23 AND `status` = 1  [ RunTime:0.000460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001218s ]
+
+[ 2016-03-07T09:54:44+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001578s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003256s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 27 AND `status` = 1  [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2016-03-07T10:58:28+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003326s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 17 AND `status` = 1  [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001236s ]
+
+[ 2016-03-07T10:58:29+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001168s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003315s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 11 AND `status` = 1  [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001109s ]
+
+[ 2016-03-07T10:58:29+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003559s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.000473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001028s ]
+
+[ 2016-03-07T10:58:29+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003563s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 11 AND `status` = 1  [ RunTime:0.000414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001137s ]
+
+[ 2016-03-07T10:58:30+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001292s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003309s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000909s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000953s ]
+
+[ 2016-03-07T10:58:32+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001822s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003978s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 11 AND `status` = 1  [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001184s ]
+
+[ 2016-03-07T10:58:33+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003235s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 17 AND `status` = 1  [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000937s ]
+
+[ 2016-03-07T10:58:34+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003298s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 23 AND `status` = 1  [ RunTime:0.000352s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000957s ]
+
+[ 2016-03-07T10:58:34+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002192s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.004301s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 27 AND `status` = 1  [ RunTime:0.000438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000981s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2016-03-07T10:58:35+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003728s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 33 AND `status` = 1  [ RunTime:0.000354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000974s ]
+
+[ 2016-03-07T10:58:37+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.004006s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 39 AND `status` = 1  [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000917s ]
+
+[ 2016-03-07T10:58:38+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003719s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 33 AND `status` = 1  [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2016-03-07T10:58:38+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002288s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.005580s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 27 AND `status` = 1  [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000971s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001015s ]
+
+[ 2016-03-07T10:58:38+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003624s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 23 AND `status` = 1  [ RunTime:0.000433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2016-03-07T10:58:38+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003711s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 17 AND `status` = 1  [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2016-03-07T10:58:38+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003263s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 11 AND `status` = 1  [ RunTime:0.000407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001179s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001237s ]
+
+[ 2016-03-07T10:58:39+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003387s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 1 AND `status` = 1  [ RunTime:0.000455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000983s ]
+
+[ 2016-03-07T10:59:00+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001866s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003377s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 27 AND `status` = 1  [ RunTime:0.000353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-03-07T10:59:00+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001409s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003301s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 23 AND `status` = 1  [ RunTime:0.000346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001352s ]
+
+[ 2016-03-07T10:59:00+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Index/type
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001213s ]
+SQL: DESCRIBE meizu_goods [ RunTime:0.003356s ]
+SQL: SELECT * FROM `meizu_goods` WHERE `pid` = 17 AND `status` = 1  [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001084s ]
+
+[ 2016-03-07T14:44:37+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Detail/detail.html?id=5
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-03-07T21:39:54+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Detail/detail.html?id=8
+ERR: Think\Model:relation方法不存在！
+

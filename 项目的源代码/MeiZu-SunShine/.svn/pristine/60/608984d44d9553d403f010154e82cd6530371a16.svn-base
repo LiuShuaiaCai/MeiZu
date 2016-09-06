@@ -1,0 +1,811 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>魅族_首页</title>
+	
+	<link rel="stylesheet" href="/xiangmu/MeiZu-SunShine/Public/Home/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/xiangmu/MeiZu-SunShine/Public/Home/css/header.css">
+	<link rel="stylesheet" href="/xiangmu/MeiZu-SunShine/Public/Home/css/footer.css">
+	
+	<link rel="stylesheet" href="/xiangmu/MeiZu-SunShine/Public/Home/css/main.css">
+	<style>
+
+	</style>
+</head>
+<body>
+	<div class="container_fluid"  name='top'>
+
+		<!-- 引入头部 -->
+		<!-- 头部开始 -->
+		<div class="top container" style="color:#666">
+			<div class="row">
+				<div class="col-md-9 top_left"><a href=''>魅族商城</a></div>
+				<div class="col-md-1 top_right"><a href=''>我的订单</a></div>
+				<div class="col-md-1 top_right"><a href=''>登录</a></div>
+				<div class="col-md-1 top_right"><a href=''>注册</a></div>
+			</div>
+		</div>
+		<!-- 导航栏 -->
+		<div class='nav'>
+			<div class="container header">
+				<div class="row nav_2">
+					<div class="col-md-2">
+						<a href="">
+							<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/logo.png" alt="LOGO">
+						</a>
+					</div>
+					<div class="col-md-1 nav_1"><a href="">PRO手机</a></div>
+					<div class="col-md-1 nav_1"><a href="">魅蓝手机</a></div>
+					<div class="col-md-1 nav_1"><a href="">MX手机</a></div>
+					<div class="col-md-1 nav_1"><a href="">精选配件</a></div>
+					<div class="col-md-1 nav_1"><a href="">智能硬件</a></div>
+					<div class="col-md-5">
+						<a href="" class="shop">
+							<span class='shopping'>购物车 0</span>
+						</a>
+						<div class="shop_2">您的购物车还没有商品~~</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 下拉图片列表 -->
+		<div class="container slide hidden">
+			<div class="container">
+				<div class="row hidden">
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="row hidden">
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="row hidden">
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="row hidden">
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 slide_1" style="float:right;margin-top:40px;">
+						<a href="">
+							<div class="slide_2">
+								<a href="">耳机 / 音响</a>
+								<a href="">路由器 / 移动电源</a>
+								<a href="">保护套 / 后盖 / 贴膜</a>
+								<a href="">数据线 / 电源适配器</a>
+								<a href="">周边配件</a>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+
+				<div class="row hidden">
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 头部结束 -->
+		
+
+		<!-- 内容开始 -->
+		
+		<div class="container main">
+			<!-- banner轮播图开始 -->
+			<div class="container banner">
+				<a href="">
+					<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/<?php echo ($data[0]['image']); ?>" alt="" style="display:block">
+				</a>
+				<a href="">
+					<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/<?php echo ($data[1]['image']); ?>" alt="" style="display:none">
+				</a>
+				<a href="">
+					<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/<?php echo ($data[2]['image']); ?>" alt="" style="display:none">
+				</a>
+				<a href="">
+					<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/<?php echo ($data[3]['image']); ?>" alt="" style="display:none">
+				</a>
+				<a href="">
+					<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/<?php echo ($data[4]['image']); ?>" alt="" style="display:none">
+				</a>
+				<a href="">
+					<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/<?php echo ($data[5]['image']); ?>" alt="" style="display:none">
+				</a>
+				<ul class="num">
+					<li style="background:#00c3f5"></li><li></li><li></li><li></li><li></li><li></li>
+				</ul>
+			</div>
+			<!-- banner轮播图结束 -->
+
+			<!-- banner左侧开始 -->
+			<div class="container banner_left">
+				<div class="row">
+					<div class="col-md-2 banner_2">
+						<a href="">全部商品分类</a>
+						<a href="" class="a">手机</a>
+						<a href="" class="a">智能硬件</a>
+						<a href="" class="a">耳机 / 音箱</a>
+						<a href="" class="a">路由器 / 移动电源</a>
+						<a href="" class="a">保护套 / 后盖 / 贴膜</a>
+						<a href="" class="a">数据线 / 电源适配器</a>
+						<a href="" class="a">周边配件</a>
+					</div>
+					
+					<div class="col-md-3 col-md-offset-2 banner_4">
+						<div class="col-md-4 banner_3">
+							<a href=''>
+								<div class="banner_5">
+									<div class="banner_6">
+										<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce1.png" alt="">
+									</div>
+									<div class="banner_7">PRO5</div>
+								</div>
+							</a>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce1.png" alt="">
+								</div>
+								<div class="banner_7">MX5</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce1.png" alt="">
+								</div>
+								<div class="banner_7">魅蓝 note2</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce1.png" alt="">
+								</div>
+								<div class="banner_7">魅蓝 metal</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce1.png" alt="">
+								</div>
+								<div class="banner_7">魅蓝 2</div>
+							</div>
+						</div>
+	
+						<div class="col-md-8 banner_8">
+							<a href=""><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/mx5.jpg" alt=""></a>
+						</div>
+					</div>
+	
+					<div class="col-md-3 col-md-offset-2 banner_4">
+						<div class="col-md-4 banner_3">
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce2.png" alt="">
+								</div>
+								<div class="banner_7">PRO5</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce2.png" alt="">
+								</div>
+								<div class="banner_7">MX5</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce2.png" alt="">
+								</div>
+								<div class="banner_7">魅蓝 note2</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce2.png" alt="">
+								</div>
+								<div class="banner_7">魅蓝 metal</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce2.png" alt="">
+								</div>
+								<div class="banner_7">魅蓝 2</div>
+							</div>
+						</div>
+	
+						<div class="col-md-8 banner_8">
+							<a href=""><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/lefan.png" alt=""></a>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-md-offset-2 banner_4">
+						<div class="col-md-4 banner_3">
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce3.png" alt="">
+								</div>
+								<div class="banner_7">PRO5</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce3.png" alt="">
+								</div>
+								<div class="banner_7">MX5</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce3.png" alt="">
+								</div>
+								<div class="banner_7">魅蓝 note2</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce3.png" alt="">
+								</div>
+								<div class="banner_7">魅蓝 metal</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce3.png" alt="">
+								</div>
+								<div class="banner_7">魅蓝 2</div>
+							</div>
+						</div>
+	
+						<div class="col-md-8 banner_8">
+							<a href=""><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/beats.png" alt=""></a>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-md-offset-2 banner_4">
+						<div class="col-md-4 banner_3">
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce4.png" alt="">
+								</div>
+								<div class="banner_7">PRO5</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce4.png" alt="">
+								</div>
+								<div class="banner_7">MX5</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce4.png" alt="">
+								</div>
+								<div class="banner_7">魅蓝 note2</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce4.png" alt="">
+								</div>
+								<div class="banner_7">魅蓝 metal</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce4.png" alt="">
+								</div>
+								<div class="banner_7">魅蓝 2</div>
+							</div>
+						</div>
+	
+						<div class="col-md-8 banner_8">
+							<a href=""><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/yidongdianyuan.jpg" alt=""></a>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-md-offset-2 banner_4">
+						<div class="col-md-4 banner_3">
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce5.png" alt="">
+								</div>
+								<div class="banner_7">PRO5</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce5.png" alt="">
+								</div>
+								<div class="banner_7">MX5</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce5.png" alt="">
+								</div>
+								<div class="banner_7">魅蓝 note2</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce5.png" alt="">
+								</div>
+								<div class="banner_7">魅蓝 metal</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce5.png" alt="">
+								</div>
+								<div class="banner_7">魅蓝 2</div>
+							</div>
+						</div>
+	
+						<div class="col-md-8 banner_8">
+							<a href=""><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/baohutao.jpg" alt=""></a>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-md-offset-2 banner_4">
+						<div class="col-md-4 banner_3">
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce6.png" alt="">
+								</div>
+								<div class="banner_7">PRO5</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce6.png" alt="">
+								</div>
+								<div class="banner_7">MX5</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce6.png" alt="">
+								</div>
+								<div class="banner_7">魅蓝 note2</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce6.png" alt="">
+								</div>
+								<div class="banner_7">魅蓝 metal</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce6.png" alt="">
+								</div>
+								<div class="banner_7">魅蓝 2</div>
+							</div>
+						</div>
+	
+						<div class="col-md-8 banner_8">
+							<a href=""><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/shipeiqi.jpg" alt=""></a>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-md-offset-2 banner_4">
+						<div class="col-md-4 banner_3">
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce7.jpg" alt="">
+								</div>
+								<div class="banner_7">PRO5</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce7.jpg" alt="">
+								</div>
+								<div class="banner_7">MX5</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce7.jpg" alt="">
+								</div>
+								<div class="banner_7">魅蓝 note2</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce7.jpg" alt="">
+								</div>
+								<div class="banner_7">魅蓝 metal</div>
+							</div>
+							<div class="banner_5">
+								<div class="banner_6">
+									<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/ce7.jpg" alt="">
+								</div>
+								<div class="banner_7">魅蓝 2</div>
+							</div>
+						</div>
+	
+						<div class="col-md-8 banner_8">
+							<a href=""><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/chaban.jpg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- banner左侧结束 -->
+
+			<!-- 预售 -->
+			<div class="container ready">
+				<div class="row ready_1">
+					<a href=""><div class="ready_2"><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/y1.jpg" alt=""></div></a>
+					<a href=""><div class="ready_2"><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/y1.jpg" alt=""></div></a>
+					<a href=""><div class="ready_2"><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/y2.jpg" alt=""></div></a>
+					<a href=""><div class="ready_2"><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/y3.jpg" alt=""></div></a>
+					<a href=""><div class="ready_2"><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/y4.png" alt=""></div></a>
+				</div>
+			</div>
+
+			<!-- 热品推荐 -->
+			<div class="container">
+				<div class="row hot">
+					<div class="row hot_1">
+						<div class="hot_2">热品推荐</div>
+						<div class="hot_3">
+							<a href="javascript:void(0)"  id='left'><div><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/arrow-r.png" alt=""></div></a>
+							<a href="javascript:void(0)"  id='right'><div style="margin-right:10px"><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/arrow-l.png" alt=""></div></a>
+						</div>
+					</div>
+					<div class="row2">
+						<div class="row hot_4">
+							<a href="" class="hot_5 hot_6"><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot1.jpg" alt=""></a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot2.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot3.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot4.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot5.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot6.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot7.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot8.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot9.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot10.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 手机 -->
+			<div class="container">
+				<div class="row phone">
+					<div class="row hot_1">
+						<div class="hot_2">手机</div>
+						<div class="hot_3">
+							<a href="javascript:void(0)"  id='left'>
+								<div id="more"><span>更多</span><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/pkg-home_z.png" alt=""></div>
+							</a>
+							
+						</div>
+					</div>
+					<div class="row2 row2_1">
+						<div class="row hot_4_1 phone_1">
+							<a href="" class="hot_5 hot_6 hot_6_1"><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot1.jpg" alt=""></a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot2.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot3.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot4.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot5.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot6.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot7.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot8.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot9.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot10.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/hot10.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 内容结束 -->
+		
+		<!-- 引入尾部 -->
+		<!-- 尾部开始 -->
+		<div class="container_fluid footer">
+			<div class="container footer_1">
+				<div class="row">
+					<div class="row footer_2">
+						<div class="footer_3">
+							<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/7.png" alt="">
+							<p><span>7天 </span><span>无理由退款</span></p>
+						</div>
+						<div class="footer_4"></div>
+						<div class="footer_3">
+							<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/15.png" alt="">
+							<p><span>15天 </span><span>换货保障</span></p>
+						</div>
+						<div class="footer_4"></div>
+						<div class="footer_3">
+							<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/1.png" alt="">
+							<p><span>1天 </span><span>免费保修</span></p>
+						</div>
+						<div class="footer_4"></div>
+						<div class="footer_3">
+							<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/baoyou.png" alt="">
+							<p><span>全场 </span><span>包邮</span></p>
+						</div>
+						<div class="footer_4"></div>
+						<div class="footer_3">
+							<img src="/xiangmu/MeiZu-SunShine/Public/Home/images/map.png" alt="">
+							<p><span>2000多家 </span><span>专卖店</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container footer_5">
+				<div class="footer_6">
+					<h4>帮助说明</h4>
+					<ul>
+						<li><a href="">支付方式</a></li>
+						<li><a href="">配送说明</a></li>
+						<li><a href="">售后服务</a></li>
+						<li><a href="">付款帮助</a></li>
+					</ul>
+				</div>
+				<div class="footer_6">
+					<h4>Flyme OS</h4>
+					<ul>
+						<li><a href="">云服务</a></li>
+						<li><a href="">固件下载</a></li>
+						<li><a href="">软件商店</a></li>
+						<li><a href="">查找手机</a></li>
+					</ul>
+				</div>
+				<div class="footer_6">
+					<h4>关于我们</h4>
+					<ul>
+						<li><a href="">关于魅族</a></li>
+						<li><a href="">加入我们</a></li>
+						<li><a href="">联系我们</a></li>
+						<li><a href="">法律声明</a></li>
+					</ul>
+				</div>
+				<div class="footer_6">
+					<h4>关注我们</h4>
+					<ul>
+						<li><a href="">新浪微博</a></li>
+						<li><a href="">腾讯微博</a></li>
+						<li><a href="">QQ空间</a></li>
+						<li><a href="javascript:void(0)" id='weixin'>官方微信</a></li>
+					</ul>
+					<div class="weixin"><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/weixin.png" alt=""></div>
+				</div>
+				
+				<div class="footer_6">
+					<h4>24小时全国服务热线</h4>
+					<ul>
+						<li id='tel'><a href="">400-788-3333</a></li>
+						<li id='last'><a href="javascript:void(0)"  ><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/xiaoshi.png" alt="">24小时在线客服</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="container footer_7">
+				<p>
+					©2016 Meizu Telecom Equipment Co., Ltd. All rights reserved.
+					<a href="">备案号：粤ICP备13003602号-2</a>
+					<a href="">经营许可证编号：粤B2-20130198</a>
+					<a href="">营业执照 </a>
+					<a href=""><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/footer-copy-1.png" alt=""></a>
+					<a href=""><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/footer-copy-2.png" alt=""></a>
+					<a href=""><img src="/xiangmu/MeiZu-SunShine/Public/Home/images/trust-icon.png" alt=""></a>
+				</p>
+			</div>
+			<a href="#top" title="回到顶部" class="backtop"></a>
+		</div>
+		<!-- 尾部结束 -->
+
+	</div>
+	
+	<script src='/xiangmu/MeiZu-SunShine/Public/Home/js/jquery-1.11.3.min.js'></script>
+	<script src='/xiangmu/MeiZu-SunShine/Public/Home/js/bootstrap.min.js'></script>
+	<script src='/xiangmu/MeiZu-SunShine/Public/Home/js/header.js'></script>
+	<script src='/xiangmu/MeiZu-SunShine/Public/Home/js/index.js'></script>
+	
+	
+	
+	<script src='/xiangmu/MeiZu-SunShine/Public/Home/js/footer.js'></script>
+</body>
+</html>

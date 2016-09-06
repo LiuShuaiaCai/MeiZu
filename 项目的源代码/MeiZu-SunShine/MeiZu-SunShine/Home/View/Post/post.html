@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<link href="__PUBLIC__/Home/css/post.css" type="text/css" rel="Stylesheet"/>
+		<script src="__PUBLIC__/Home/js/jquery-1.11.3.min.js"></script>
+		<!-- 引入百度编辑器的js文件 -->
+		<script src="__PUBLIC__/UEditor/ueditor.config.js"></script>
+		<script src="__PUBLIC__/UEditor/ueditor.all.min.js"></script>
+		<script src="__PUBLIC__/Home/js/xcConfirm.js"></script>
+		<link href="__PUBLIC__/Home/css/xcConfirm.css" type="text/css" rel="Stylesheet"/>
+		<style>
+			.menu{
+				text-decoration:none;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="{:U('Index/index')}" class="menu"><span>返回主页</span></a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="{:U('Login/login')}" class="menu"><span>登陆</span></a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="{:U('Register/register')}" class="menu"><span>注册</span></a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="{$_SERVER['HTTP_REFERER']}" class="menu"><span>返回上一页</span></a>
+		<div class="block">
+				<div class="hotPost">
+					社区热帖
+				</div>
+				
+				<div class="say">
+					<a href="javascript:void(0)" style="text-decoration:none; color:black"  id="say">发帖</a>
+				</div>
+				<div class="form">
+					<form action="{:U('Post/post')}" method="get">
+						搜索<input name="title" type="text">
+						<input value="提交" type="submit">
+					</form>
+				</div>
+				<div class="number">
+					<span class="a1">今日发帖:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="a1" style="color:#FFBA00">{:empty($res1)?'0':$res1}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="a1">|</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="a1">历史最高:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="a1" style="color:#FFBA00">{$res}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					
+				</div>
+		</div>
+		<script>
+			$(function(){
+				$('#say').click(function(){
+					$.get("{:U('Post/demo')}",function(msg){
+						if(msg=='no'){
+							var txt= "请先登录再发帖";
+							window.wxc.xcConfirm(txt, window.wxc.xcConfirm.typeEnum.confirm);
+							
+						}else{
+							var ue = UE.getEditor('container',{
+							toolbars: [
+							['fullscreen', 'source', 'undo', 'redo', 'bold'],
+							['snapscreen','date','simpleupload','insertimage'],
+							['emotion']
+							]
+						});
+							$('.editor').css('display','block');
+						}
+					})
+				})
+			})
+		</script>
+		<foreach name="data" item="vo" key="k">
+			
+		<div class="block">
+			<div class="hotPost">
+				<img src="__PUBLIC__/{:empty($vo['photo'])?'default.jpg':$vo['photo']}" width="50px" height="50px">
+			</div>
+			<div class="content">
+				
+				<a href="{:U('Reply/reply')}?pid={$vo.pid}&uid={$vo.uid}&id={$_GET['id']}" style="color:black;text-decoration:none;">{:htmlspecialchars_decode($vo['title'])}</a>
+			</div>
+			
+			<div class="top">
+				<if condition="$vo['top'] eq 2">
+				<img src="__PUBLIC__/Home/images/top.gif" width="25px" height="25px">
+				<else/>
+				<div style="width:25px;height:25px;">
+				</div>
+				</if>
+			</div>
+			
+			<div class="add">
+				<if condition="$vo['add'] eq 2">
+				<img src="__PUBLIC__/Home/images/add.gif" width="25px" height="25px">
+				<else/>
+				<div style="width:25px;height:25px;">
+				</div>
+				</if>
+			</div>
+			<div class="time">
+				{$vo['time']|date='Y-m-d H:i:s',###}
+			</div>
+			<div class="reply">
+				回复&nbsp;&nbsp;:&nbsp;&nbsp;{$count[$k]}
+			</div>
+			<div class="name">
+				{$vo['userName']}
+			</div>
+			<div class="score">
+				积分:<span style="color:red">{$vo['score']}</span>
+			</div>
+		</div>
+		
+		</foreach>
+		<div class="block">
+			{$show}
+		</div>
+		<div class="editor">		
+			<form action="{:U('Post/add')}" method="post">
+				
+				<input type="text" name="title"  class="title" placeholder="标题" />
+				
+				
+				<input type="checkbox" name="cstatus">禁止回帖
+				
+				<input type="hidden" name="id" value="{$_GET['id']}">
+					
+				<!-- 加载编辑器的容器 -->
+				<script id="container" name="content" type="text/plain"></script>
+				<input type='image' value='提交' src="__PUBLIC__/Home/images/timg.jpg" class="submit"/>	
+			</form>	
+		</div>	
+		<!--<script>
+		
+			//实例化编辑器
+			var ue = UE.getEditor('container',{
+							toolbars: [
+							['fullscreen', 'source', 'undo', 'redo', 'bold'],
+							['snapscreen','date','simpleupload','insertimage'],
+							['emotion']
+							]
+						});
+			$(function(){
+				$('#say').click(function(){
+					$('.editor').css('display','block');
+				})
+			})
+		</script>-->
+	</body>
+</html>

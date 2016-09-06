@@ -1,0 +1,153 @@
+		<!-- 引入头部 -->
+		{:W('Public/header')}
+
+		<!-- 内容开始 -->
+		<block name='main'>
+		<div class="container main">
+			<!-- banner轮播图开始 -->
+			<div class="container banner">
+			<foreach name='banner' item='vo0'>
+				<a href="">
+					<img id='img' src="__PUBLIC__/{$vo0['src']}" alt="" style="display:none">
+				</a>
+			</foreach>
+				<ul class="num">
+					<li style="background:#00c3f5"></li><li></li><li></li><li></li><li></li><li></li>
+				</ul>
+			</div>
+			<!-- banner轮播图结束 -->
+
+			<!-- banner左侧开始 -->
+			<div class="container banner_left">
+				<div class="row">
+					<div class="col-md-2 banner_2">
+						<a href="{:U('Type/type')}">全部商品分类</a>
+						<foreach name='tree' item='vo'>
+							<a href="" class="a" name='a' value="{$vo['id']}">{$vo['tname']}</a>
+						</foreach>
+					</div>
+					
+					<foreach name='tree' item='vo'>
+					<div class="col-md-3 col-md-offset-2 banner_4">
+						<div class="col-md-4 banner_3"></div>
+	
+						<div class="col-md-8 banner_8"></div>
+					</div>
+					</foreach>
+					
+				</div>
+			</div>
+			<!-- banner左侧结束 -->
+
+			<!-- 预售 -->
+			<div class="container ready">
+				<div class="row ready_1">
+					<div class="ready_2">
+					<!-- <marquee direction='up' scrollamount='1' behavior='alternate' onmouseover='stop()' onmouseout='start()'> -->
+					<foreach name='notice' item='vo3'>
+					<a href=""><div class="notice">{$vo3['content']}</div></a>
+					</foreach>
+					<!-- </marquee> -->
+					</div>
+					<a href=""><div class="ready_2"><img src="__PUBLIC__/Home/images/y1.jpg" alt=""></div></a>
+					<a href=""><div class="ready_2"><img src="__PUBLIC__/Home/images/y2.jpg" alt=""></div></a>
+					<a href=""><div class="ready_2"><img src="__PUBLIC__/Home/images/y3.jpg" alt=""></div></a>
+					<a href=""><div class="ready_2"><img src="__PUBLIC__/Home/images/y4.png" alt=""></div></a>
+				</div>
+			</div>
+
+			<!-- 热品推荐 -->
+			<div class="container">
+				<div class="row hot">
+					<div class="row hot_1">
+						<div class="hot_2">热品推荐</div>
+						<div class="hot_3">
+							<a href="javascript:void(0)"  id='left'><div><img src="__PUBLIC__/Home/images/arrow-r.png" alt=""></div></a>
+							<a href="javascript:void(0)"  id='right'><div style="margin-right:10px"><img src="__PUBLIC__/Home/images/arrow-l.png" alt=""></div></a>
+						</div>
+					</div>
+					<div class="row2">
+						<div class="row hot_4">
+							<a href="" class="hot_5 hot_6"><img src="__PUBLIC__/Home/images/hot1.jpg" alt=""></a>
+
+							<foreach name='hots' item='vo4'>
+							<a href="" class="hot_5" value="">
+								<div class="hot_5_1">
+								<div class="stat">{$vo4['hot']}</div>
+								<img src="__PUBLIC__/{$vo4['pic']}" alt="">
+								</div>
+								<div class="hot_7">
+									<h4>{$vo4['gname']}</h4>
+									<h6>{$vo4['desc']}</h6>
+									<p>￥{$vo4['price']}</p>
+								</div>
+							</a>
+							</foreach>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 手机 精选配件 智能硬件 手机周边 -->
+			<foreach name='arr' item='vo5' key='k'>
+			<div class="container">
+				<div class="row phone">
+					<div class="row hot_1">
+						<div class="hot_2">{$k}</div>
+						<div class="hot_3">
+							<a href="javascript:void(0)"  id='left'>
+								<div id="more"><span>更多</span><img src="__PUBLIC__/Home/images/pkg-home_z.png" alt=""></div>
+							</a>
+							
+						</div>
+					</div>
+					<div class="row2 row2_1">
+						<div class="row hot_4_1 phone_1">
+							<!-- <a href="" class="hot_5 hot_6 hot_6_2"><img src="__PUBLIC__/Home/images/{$img[image]}" alt=""></a> -->
+							<!-- 开始遍历 -->
+							<foreach name='vo5' item='vo6'>
+							<a href="" class="hot_5">
+							
+								<div class="hot_5_1">
+								<div class="stat">{$vo6['hot']}</div>
+									<img src="__PUBLIC__/{$vo6['pic']}" alt="">
+								</div>
+								<div class="hot_7">
+									<h4>{$vo6['gname']}</h4>
+									<h6>{$vo6['desc']}</h6>
+									<p>￥{$vo6['price']}</p>
+								</div>
+							</a>
+							</foreach>
+							<!-- 遍历结束 -->
+						</div>
+					</div>
+				</div>
+			</div>
+			</foreach>
+		</div>
+		</block>
+		<!-- 内容结束 -->
+		
+		<!-- 引入尾部 -->
+		{:W('Public/footer')}
+
+	</div>
+	<script>var url = '__MODULE__'</script>
+	<script>var src = '__PUBLIC__'</script>
+	<script src='__PUBLIC__/Home/js/jquery-1.11.3.min.js'></script>
+	<script src='__PUBLIC__/Home/js/bootstrap.min.js'></script>
+	<script src='__PUBLIC__/Home/js/jQuery.md5.js'></script>
+	<script src='__PUBLIC__/Home/js/header.js'></script>
+	<script src='__PUBLIC__/Home/js/index.js'></script>
+	<script src='__PUBLIC__/Home/js/detail.js'></script>
+	<script src='__PUBLIC__/Home/js/shop.js'></script>
+	<script src='__PUBLIC__/Home/js/shop2.js'></script>
+	<script src='__PUBLIC__/Home/js/shop3.js'></script>
+	<script src='__PUBLIC__/Home/js/order.js'></script>
+	<block name='js'>
+	
+	</block>
+	<script src='__PUBLIC__/Home/js/footer.js'></script>
+</body>
+</html>

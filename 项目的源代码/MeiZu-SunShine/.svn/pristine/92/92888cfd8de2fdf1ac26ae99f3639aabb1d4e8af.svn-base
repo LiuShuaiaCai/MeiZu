@@ -1,0 +1,4 @@
+<extend name="Public/base" />
+<block name="title">后台管理</block>
+<block name="main">
+</block>

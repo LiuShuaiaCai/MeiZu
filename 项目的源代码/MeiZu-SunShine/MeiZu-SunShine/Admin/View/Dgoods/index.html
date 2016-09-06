@@ -1,0 +1,47 @@
+
+<extend name="Public/base" />
+<block name="title">积分兑换列表</block>
+<block name="main">
+  <div class="panel-body">
+       <div class="table-responsive">
+       							
+       							<form>
+       							商品：<input type="text" name="name" value="" placeholder="请输出商品名称">
+       									<input type="submit" value="查询">
+       							</form>
+                      <table class="table">
+                          <thead>
+                                        <tr>
+                                            <th>编号</th>
+                                            <th>商品名称</th>
+                                            <th>添加时间</th>
+                                            <th>价格</th>
+                                            <th>图片</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <foreach name='data' item='vo'>
+                                        <tr class="success">
+                                            <td>{$vo['id']}</td>
+                                            <td>{$vo['name']}</td>
+                                            <td>{$vo['addtime']|date="Y-m-d",###}</td>
+                                            <td>{$vo['price']}</td>
+                                            <td>{$vo['pic']}</td>
+                                            <td>
+                                            	<a href="{:U('Dgoods/edit')}?id={$vo['id']}">修改</a>
+                                                <span>|</span>
+                                            	<a href="{:U('Dgoods/del')}?id={$vo['id']}">删除</a>
+                                            	<span>|</span>
+                                            	<!-- <a href="">查看订单</a> -->
+                                            </td>
+                                        </tr>
+                                        
+                                      </foreach>
+                                      <tr>
+                                            <td colspan="6">{$show}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>                     
+</block>

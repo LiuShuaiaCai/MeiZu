@@ -1,0 +1,58 @@
+<extend name="Index/index" />
+<block name="main">
+	<!-- 主要内容 -->
+	<div style="background-color:#DFEDFA;" >
+		<div class="container main-1">
+			<div class="row main01">
+
+				<a href="{:U('Question/index',array('id'=>$id))}">服务支持</a>
+				>
+				<a href="">PRO 5</a>
+				<form action="{:U('Question/fpost')}" method="post">
+					<input type="hidden" name="tid" value="{:I('get.tid')}">
+					<!-- <input type="hidden" name="uid" value="{:I('get.uid')}"> -->
+					<input class="inp" type="submit" value="发帖">
+				</form>
+			</div>	
+		</div>
+
+		<div class="container main-2">
+			<div class="row main02">
+				<form>
+			搜索：<input type="text" name="title" value="" style="background-color:#DFEDFA;">
+				  <input type="submit" value="提交">	
+				</form>
+				<p>{$show}</p>
+			</div>
+			
+		</div>
+		<div class="container" style="padding-bottom:20px">
+			<table width="1220">
+				<tr height="40">
+					<td class="col-md-2">标题</td>
+					<td class="col-md-2">发表时间</td>
+					<td class="col-md-2">作者</td>
+					<td class="col-md-2">回复</td>
+					<td class="col-md-2">最后发表</td>
+				</tr>
+				<foreach name="res" item="vo2" key="k">
+				<tr height="40">
+					<td class="col-md-2">
+						<a href="{:U('Question/qreply',array('id'=>$vo2['id'],'tid'=>$vo2['tid']))}">{$vo2['title']}</a>
+					</td>
+					<td class="col-md-2">
+						{:date('Y-m-d H:i:s',$vo2['ctime'])}
+					</td>
+					<td class="col-md-2">{$vo2['userName']}</td>
+				
+					<td class="col-md-2">{$vo2['count']}</td>
+					<td class="col-md-2">{$vo2['replayName']}</td>
+				</tr>
+				</foreach>
+			</table>
+		</div>
+		
+		
+	</div>
+		
+</block>

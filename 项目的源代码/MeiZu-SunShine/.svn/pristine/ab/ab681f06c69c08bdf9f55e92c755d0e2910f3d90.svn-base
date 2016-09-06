@@ -1,0 +1,42 @@
+
+<extend name="Public/base" />
+<block name="title">管理员列表</block>
+<block name="main">
+  <div class="panel-body">
+       <div class="table-responsive">
+       							
+       							<form action="" method="get">
+       							管理员：<input type="text" name="username" value="">
+       									<input type="submit" value="查询">
+       							</form>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>编号</th>
+                                            <th>管理员姓名</th>
+                                            <th>等级</th>
+                                            <th>状态</th>
+                                            <th>管理员邮箱</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="success">
+                                            <td>1</td>
+                                            <td>张三</td>
+                                            <td>开启</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                            <td>
+                                            	<a href="">修改</a>
+                                            	<span>|</span>
+                                            	<a href="">删除</a>
+                                            	<span>|</span>
+                                            	<a href="">禁用</a>
+                                            </td>
+                                        </tr>
+                                      
+                                    </tbody>
+                                </table>
+                            </div>                     
+</block>

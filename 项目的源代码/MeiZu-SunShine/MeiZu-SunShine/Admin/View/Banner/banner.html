@@ -1,0 +1,33 @@
+
+<extend name="Public/base" />
+<block name="title">轮播列表</block>
+<block name="main">
+  <div class="panel-body">
+       <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>编号</th>
+                                            <th>图片</th>
+                                            <th>图片名称</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+										<foreach name="data" item="vo">
+                                        <tr class="success" >
+                                            <td>{$vo.id}</td>
+                                            <td><img src="__PUBLIC__/{:empty($vo['src']) ? 'default.jpg' : $vo['src']}" width="100px"/></td>
+                                            <td>{$vo.image}</td>
+                                            <td>
+                                            	<a href="{:U('Banner/update')}?id={$vo.id}">修改</a>
+                                            	<span>|</span>
+                                            	<a href="{:U('Banner/delete')}?id={$vo.id}">删除</a>
+                                            	
+                                            </td>
+                                        </tr>
+										</foreach>
+                                    </tbody>
+                                </table>
+                            </div>                     
+</block>

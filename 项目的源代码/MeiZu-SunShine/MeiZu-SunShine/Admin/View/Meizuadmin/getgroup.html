@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="{:U('Meizuadmin/addgroup')}" method = "post">
+		<input type="hidden" name="uid" value="{$data['id']}">  
+		<foreach name="res" item="vo">
+		<input type="checkbox" name="group_id[]" value="{$vo['id']}"{:in_array($vo['id'],$arr)?'checked':''}>{$vo['title']}
+		</foreach>
+		<input type="submit" value="提交">
+	</form>
+</body>
+</html>

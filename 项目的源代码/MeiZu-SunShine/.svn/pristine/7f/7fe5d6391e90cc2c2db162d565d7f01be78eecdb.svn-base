@@ -1,0 +1,155 @@
+<!-- 头部开始 -->
+		<div class="top container" style="color:#666">
+			<div class="row">
+				<div class="col-md-9 top_left"><a href=''>魅族商城</a></div>
+				<div class="col-md-1 top_right"><a href=''>我的订单</a></div>
+				<div class="col-md-1 top_right"><a href=''>登录</a></div>
+				<div class="col-md-1 top_right"><a href=''>注册</a></div>
+			</div>
+		</div>
+		<!-- 导航栏 -->
+		<div class='nav'>
+			<div class="container header">
+				<div class="row nav_2">
+					<div class="col-md-2">
+						<a href="">
+							<img src="__PUBLIC__/Home/images/logo.png" alt="LOGO">
+						</a>
+					</div>
+					<div class="col-md-1 nav_1"><a href="">PRO手机</a></div>
+					<div class="col-md-1 nav_1"><a href="">魅蓝手机</a></div>
+					<div class="col-md-1 nav_1"><a href="">MX手机</a></div>
+					<div class="col-md-1 nav_1"><a href="">精选配件</a></div>
+					<div class="col-md-1 nav_1"><a href="">智能硬件</a></div>
+					<div class="col-md-5">
+						<a href="" class="shop">
+							<span class='shopping'>购物车 0</span>
+						</a>
+						<div class="shop_2">您的购物车还没有商品~~</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 下拉图片列表 -->
+		<div class="container slide hidden">
+			<div class="container">
+				<div class="row hidden">
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="__PUBLIC__/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="row hidden">
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="__PUBLIC__/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="__PUBLIC__/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="__PUBLIC__/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="row hidden">
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="__PUBLIC__/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="row hidden">
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="__PUBLIC__/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="__PUBLIC__/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 slide_1" style="float:right;margin-top:40px;">
+						<a href="">
+							<div class="slide_2">
+								<a href="">耳机 / 音响</a>
+								<a href="">路由器 / 移动电源</a>
+								<a href="">保护套 / 后盖 / 贴膜</a>
+								<a href="">数据线 / 电源适配器</a>
+								<a href="">周边配件</a>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+
+				<div class="row hidden">
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="__PUBLIC__/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="__PUBLIC__/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="__PUBLIC__/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 头部结束 -->

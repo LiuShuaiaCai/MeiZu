@@ -1,0 +1,759 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+<title>魅族_商品分类</title>
+
+	<link rel="stylesheet" href="/xiangmu/meizu3/Public/Home/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/xiangmu/meizu3/Public/Home/css/header.css">
+	<link rel="stylesheet" href="/xiangmu/meizu3/Public/Home/css/footer.css">
+	
+<link rel="stylesheet" href="/xiangmu/meizu3/Public/Home/css/type.css">
+
+	<link rel="stylesheet" href="/xiangmu/meizu3/Public/Home/css/main.css">
+	<style>
+
+	</style>
+</head>
+<body>
+	<div class="container_fluid"  name='top'>
+
+		<!-- 引入头部 -->
+		<!-- 头部开始 -->
+		<div class="top container" style="color:#666">
+			<div class="row">
+				<div class="col-md-9 top_left"><a href=''>魅族商城</a></div>
+				<div class="col-md-1 top_right"><a href=''>我的订单</a></div>
+				<div class="col-md-1 top_right"><a href=''>登录</a></div>
+				<div class="col-md-1 top_right"><a href=''>注册</a></div>
+			</div>
+		</div>
+		<!-- 导航栏 -->
+		<div class='nav'>
+			<div class="container header">
+				<div class="row nav_2">
+					<div class="col-md-2">
+						<a href="">
+							<img src="/xiangmu/meizu3/Public/Home/images/logo.png" alt="LOGO">
+						</a>
+					</div>
+					<div class="col-md-1 nav_1"><a href="">PRO手机</a></div>
+					<div class="col-md-1 nav_1"><a href="">魅蓝手机</a></div>
+					<div class="col-md-1 nav_1"><a href="">MX手机</a></div>
+					<div class="col-md-1 nav_1"><a href="">精选配件</a></div>
+					<div class="col-md-1 nav_1"><a href="">智能硬件</a></div>
+					<div class="col-md-5">
+						<a href="" class="shop">
+							<span class='shopping'>购物车 0</span>
+						</a>
+						<div class="shop_2">您的购物车还没有商品~~</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 下拉图片列表 -->
+		<div class="container slide hidden">
+			<div class="container">
+				<div class="row hidden">
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/meizu3/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="row hidden">
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/meizu3/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/meizu3/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/meizu3/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="row hidden">
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/meizu3/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="row hidden">
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/meizu3/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/meizu3/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 slide_1" style="float:right;margin-top:40px;">
+						<a href="">
+							<div class="slide_2">
+								<a href="">耳机 / 音响</a>
+								<a href="">路由器 / 移动电源</a>
+								<a href="">保护套 / 后盖 / 贴膜</a>
+								<a href="">数据线 / 电源适配器</a>
+								<a href="">周边配件</a>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+
+				<div class="row hidden">
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/meizu3/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/meizu3/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-2 slide_1">
+						<a href="">
+							<div class="slide_2">
+								<img src="/xiangmu/meizu3/Public/Home/images/pro5.png" alt="">
+								<div style="font-size:12px;color:#333">PRO5</div>
+								<div style="font-size:16px;color:red">￥2799</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 头部结束 -->
+		
+
+		<!-- 内容开始 -->
+		
+	<div class="container type">
+		<div class="row title">
+			<a href="">首页</a>
+			<span>></span>
+			商品分类
+		</div>
+		<div class="row type_1">
+			<ul>
+				<a href="javascript:void(0)"><li>手机</li></a>
+				<a href="javascript:void(0)"><li>智能硬件</li></a>
+				<a href="javascript:void(0)"><li>耳机/音箱</li></a>
+				<a href="javascript:void(0)"><li>路由器/移动电源</li></a>
+				<a href="javascript:void(0)"><li>保护壳/后盖/贴膜</li></a>
+				<a href="javascript:void(0)"><li>数据线/电源适配器</li></a>
+				<a href="javascript:void(0)"><li>周边硬件</li></a>
+			</ul>
+		</div>
+		<div class="row type_2 display">
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/type1.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/type2.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del></del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/type3.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/type4.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row type_2 hidden">
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/ying1.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/ying2.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del></del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/ying3.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/ying4.jpg" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row type_2 hidden">
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/er1.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/er2.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del></del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/er3.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/er4.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/er5.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/er6.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row type_2 hidden">
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/luyou1.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/luyou2.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del></del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/luyou3.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+		</div>
+		<div class="row type_2 hidden">
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/bao1.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/bao2.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del></del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/bao3.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/bao4.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row type_2 hidden">
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/shu1.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/shu2.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del></del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/shu3.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/shu4.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row type_2 hidden">
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/pei1.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/pei2.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del></del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/pei3.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="/xiangmu/meizu3/Public/Home/images/pei4.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 热品推荐 -->
+			<div class="container">
+				<div class="row hot">
+					<div class="row hot_1">
+						<div class="hot_2">为您推荐</div>
+						<div class="hot_3">
+							<a href="javascript:void(0)"  id='left'><div><img src="/xiangmu/meizu3/Public/Home/images/arrow-r.png" alt=""></div></a>
+							<a href="javascript:void(0)"  id='right'><div style="margin-right:10px"><img src="/xiangmu/meizu3/Public/Home/images/arrow-l.png" alt=""></div></a>
+						</div>
+					</div>
+					<div class="row2">
+						<div class="row hot_4">
+							<!-- <a href="" class="hot_5 hot_6"><img src="/xiangmu/meizu3/Public/Home/images/hot1.jpg" alt=""></a> -->
+							<a href="" class="hot_5">
+								<img src="/xiangmu/meizu3/Public/Home/images/hot11.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/meizu3/Public/Home/images/hot2.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/meizu3/Public/Home/images/hot3.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/meizu3/Public/Home/images/hot4.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/meizu3/Public/Home/images/hot5.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/meizu3/Public/Home/images/hot6.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/meizu3/Public/Home/images/hot7.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/meizu3/Public/Home/images/hot8.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/meizu3/Public/Home/images/hot9.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="/xiangmu/meizu3/Public/Home/images/hot10.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	</div>
+
+		<!-- 内容结束 -->
+		
+		<!-- 引入尾部 -->
+		<!-- 尾部开始 -->
+		<div class="container_fluid footer">
+			<div class="container footer_1">
+				<div class="row">
+					<div class="row footer_2">
+						<div class="footer_3">
+							<img src="/xiangmu/meizu3/Public/Home/images/7.png" alt="">
+							<p><span>7天 </span><span>无理由退款</span></p>
+						</div>
+						<div class="footer_4"></div>
+						<div class="footer_3">
+							<img src="/xiangmu/meizu3/Public/Home/images/15.png" alt="">
+							<p><span>15天 </span><span>换货保障</span></p>
+						</div>
+						<div class="footer_4"></div>
+						<div class="footer_3">
+							<img src="/xiangmu/meizu3/Public/Home/images/1.png" alt="">
+							<p><span>1天 </span><span>免费保修</span></p>
+						</div>
+						<div class="footer_4"></div>
+						<div class="footer_3">
+							<img src="/xiangmu/meizu3/Public/Home/images/baoyou.png" alt="">
+							<p><span>全场 </span><span>包邮</span></p>
+						</div>
+						<div class="footer_4"></div>
+						<div class="footer_3">
+							<img src="/xiangmu/meizu3/Public/Home/images/map.png" alt="">
+							<p><span>2000多家 </span><span>专卖店</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container footer_5">
+				<div class="footer_6">
+					<h4>帮助说明</h4>
+					<ul>
+						<li><a href="">支付方式</a></li>
+						<li><a href="">配送说明</a></li>
+						<li><a href="">售后服务</a></li>
+						<li><a href="">付款帮助</a></li>
+					</ul>
+				</div>
+				<div class="footer_6">
+					<h4>Flyme OS</h4>
+					<ul>
+						<li><a href="">云服务</a></li>
+						<li><a href="">固件下载</a></li>
+						<li><a href="">软件商店</a></li>
+						<li><a href="">查找手机</a></li>
+					</ul>
+				</div>
+				<div class="footer_6">
+					<h4>关于我们</h4>
+					<ul>
+						<li><a href="">关于魅族</a></li>
+						<li><a href="">加入我们</a></li>
+						<li><a href="">联系我们</a></li>
+						<li><a href="">法律声明</a></li>
+					</ul>
+				</div>
+				<div class="footer_6">
+					<h4>关注我们</h4>
+					<ul>
+						<li><a href="">新浪微博</a></li>
+						<li><a href="">腾讯微博</a></li>
+						<li><a href="">QQ空间</a></li>
+						<li><a href="javascript:void(0)" id='weixin'>官方微信</a></li>
+					</ul>
+					<div class="weixin"><img src="/xiangmu/meizu3/Public/Home/images/weixin.png" alt=""></div>
+				</div>
+				
+				<div class="footer_6">
+					<h4>24小时全国服务热线</h4>
+					<ul>
+						<li id='tel'><a href="">400-788-3333</a></li>
+						<li id='last'><a href="javascript:void(0)"  ><img src="/xiangmu/meizu3/Public/Home/images/xiaoshi.png" alt="">24小时在线客服</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="container footer_7">
+				<p>
+					©2016 Meizu Telecom Equipment Co., Ltd. All rights reserved.
+					<a href="">备案号：粤ICP备13003602号-2</a>
+					<a href="">经营许可证编号：粤B2-20130198</a>
+					<a href="">营业执照 </a>
+					<a href=""><img src="/xiangmu/meizu3/Public/Home/images/footer-copy-1.png" alt=""></a>
+					<a href=""><img src="/xiangmu/meizu3/Public/Home/images/footer-copy-2.png" alt=""></a>
+					<a href=""><img src="/xiangmu/meizu3/Public/Home/images/trust-icon.png" alt=""></a>
+				</p>
+			</div>
+			<a href="#top" title="回到顶部" class="backtop"></a>
+		</div>
+		<!-- 尾部结束 -->
+
+	</div>
+	
+	<script src='/xiangmu/meizu3/Public/Home/js/jquery-1.11.3.min.js'></script>
+	<script src='/xiangmu/meizu3/Public/Home/js/bootstrap.min.js'></script>
+	<script src='/xiangmu/meizu3/Public/Home/js/header.js'></script>
+	<script src='/xiangmu/meizu3/Public/Home/js/index.js'></script>
+	
+<script src="/xiangmu/meizu3/Public/Home/js/type.js"></script>
+
+	<script src='/xiangmu/meizu3/Public/Home/js/footer.js'></script>
+</body>
+</html>

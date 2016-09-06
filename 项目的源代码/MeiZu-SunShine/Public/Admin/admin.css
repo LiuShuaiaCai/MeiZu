@@ -1,0 +1,36 @@
+.watch{
+	width:800px;
+	height: 400px;
+	border:1px solid #f0f0f0;
+}
+.look_user,.look_name,.look_adress{
+	height: 60px;
+	line-height: 60px;
+	border:1px solid #f0f0f0;
+}
+.look_goods{
+	height: 220px;
+	border: 1px solid #f0f0f0;
+	padding:10px;
+}
+.look_goods img{
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+.good{
+	float: left;
+}
+.good span{
+    display: block;
+    height: 10px;
+}
+.userName{
+	font-size: 24px;
+	font-weight: 400px;
+	margin-right: 20px;
+}
+.look_person{
+	font-size: 20px;
+	font-weight: 400px;
+}

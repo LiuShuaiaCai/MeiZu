@@ -1,0 +1,42 @@
+
+<extend name="Public/base" />
+<block name="title">订单状态</block>
+<block name="main">
+  <div class="panel-body">
+       <div class="table-responsive">
+                    
+                    <form action="" method="get">
+                    订单：<input type="text" name="username" value="">
+                        <input type="submit" value="查询">
+                    </form>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>编号</th>
+                                            <th>用户名</th>
+                                            <th>商品名</th>
+                                            <th>数量</th>
+                                            <th>状态</th>
+                                            <th>操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="success">
+                                            <td>1</td>
+                                            <td>张三</td>
+                                            <td>开启</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                            <td>
+                                              <a href="">修改</a>
+                                              <span>|</span>
+                                              <a href="">删除</a>
+                                              <span>|</span>
+                                              <a href="">禁用</a>
+                                            </td>
+                                        </tr>
+                                      
+                                    </tbody>
+                                </table>
+                            </div>                     
+</block>

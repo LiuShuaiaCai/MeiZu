@@ -1,0 +1,147 @@
+[ 2016-02-28T10:22:42+08:00 ] 127.0.0.1 /xiangmu/meizu3/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012708s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014454s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011950s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.030249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.030369s ]
+
+[ 2016-02-28T10:22:58+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2016-02-28T10:24:02+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+INFO: [ view_parse ] --START--
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000726s ]
+
+[ 2016-02-28T10:46:13+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/User
+ERR: 模板不存在:./MeiZu-SunShine/Home/View/User/index.html
+
+[ 2016-02-28T10:50:41+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/User
+ERR: 模板不存在:./MeiZu-SunShine/Home/View/User/index.html
+
+[ 2016-02-28T10:52:03+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Hone
+ERR: 无法加载控制器:Hone
+
+[ 2016-02-28T10:53:34+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Index
+ERR: 模板不存在:./MeiZu-SunShine/Home/View/Index/index.html
+
+[ 2016-02-28T10:53:59+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/
+ERR: 模板不存在:./MeiZu-SunShine/Home/View/Index/index.html
+
+[ 2016-02-28T10:54:01+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/
+ERR: 模板不存在:./MeiZu-SunShine/Home/View/Index/index.html
+
+[ 2016-02-28T10:55:24+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/
+ERR: 模板不存在:./MeiZu-SunShine/Home/View/Index/index.html
+
+[ 2016-02-28T10:55:26+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/
+ERR: 模板不存在:./MeiZu-SunShine/Home/View/Index/index.html
+
+[ 2016-02-28T10:55:26+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/
+ERR: 模板不存在:./MeiZu-SunShine/Home/View/Index/index.html
+
+[ 2016-02-28T10:55:27+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/
+ERR: 模板不存在:./MeiZu-SunShine/Home/View/Index/index.html
+
+[ 2016-02-28T10:55:27+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/
+ERR: 模板不存在:./MeiZu-SunShine/Home/View/Index/index.html
+
+[ 2016-02-28T10:55:31+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/
+ERR: 模板不存在:./MeiZu-SunShine/Home/View/Index/index.html
+
+[ 2016-02-28T10:56:41+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Index
+ERR: 模板不存在:./MeiZu-SunShine/Home/View/Index/index.html
+
+[ 2016-02-28T11:33:34+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Type
+ERR: 无法加载控制器:Type
+
+[ 2016-02-28T11:35:48+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Type
+ERR: 模板不存在:./MeiZu-SunShine/Home/View/Type/index.html
+
+[ 2016-02-28T11:36:18+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Type
+ERR: 非法操作:index
+
+[ 2016-02-28T11:37:25+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Type
+ERR: 非法操作:index
+
+[ 2016-02-28T11:37:26+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Type
+ERR: 非法操作:index
+
+[ 2016-02-28T11:37:27+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Type
+ERR: 非法操作:index
+
+[ 2016-02-28T11:37:27+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Type
+ERR: 非法操作:index
+
+[ 2016-02-28T11:37:27+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Type
+ERR: 非法操作:index
+
+[ 2016-02-28T11:37:27+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Type
+ERR: 非法操作:index
+
+[ 2016-02-28T11:37:27+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Type
+ERR: 非法操作:index
+
+[ 2016-02-28T11:37:27+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Type
+ERR: 非法操作:index
+
+[ 2016-02-28T11:37:27+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Type
+ERR: 非法操作:index
+
+[ 2016-02-28T11:37:27+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Type
+ERR: 非法操作:index
+
+[ 2016-02-28T11:37:27+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Type
+ERR: 非法操作:index
+
+[ 2016-02-28T11:37:27+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Type
+ERR: 非法操作:index
+
+[ 2016-02-28T17:57:17+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Banner/
+ERR: 模板不存在:./MeiZu-SunShine/Home/View/Banner/index.html
+
+[ 2016-02-28T18:01:01+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Index/index
+ERR: Think\Controller:_sql方法不存在！
+
+[ 2016-02-28T18:01:03+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Index/index
+ERR: Think\Controller:_sql方法不存在！
+
+[ 2016-02-28T18:01:04+08:00 ] 127.0.0.1 /xiangmu/meizu3/Home/Index/index
+ERR: Think\Controller:_sql方法不存在！
+

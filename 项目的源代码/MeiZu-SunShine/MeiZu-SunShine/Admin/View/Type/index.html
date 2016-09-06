@@ -1,0 +1,38 @@
+
+<extend name="Public/base" />
+<block name="title">商品分类</block>
+<block name="main">
+  <div class="panel-body">
+    
+    <ul>
+      
+      <foreach name="list" item="vo">
+      <div>
+      <li style="text-indent:{$vo['level']*20}px; list-style-type:none;font-size:20px">{$vo['tname']}</li>
+      </div>
+      <if condition="$vo['pid'] eq 0">
+        <div style="width:300px;margin-left:500px;margin-top:-20px;">
+        <a href="{:U('Goods/add',array('id'=>$vo['id'],'name'=>$vo['tname']))}">添加商品</a>
+        <span>|</span>
+        <a href="{:U('Type/edit',array('id'=>$vo['id']))}">修改</a>
+        <span>|</span>
+        <!--<a href="{:U('Type/enable')}?id={$vo['id']}&status={$vo['status']}
+                    ">{$vo['status']==1?'禁用':'启用'}</a>-->
+
+        <a href="{:U('Type/enable',array('status'=>$vo['status'],'id'=>$vo['id'],'childs'=>$vo['childs']))}" onFocus="this.blur()" class="add">{$vo['status'] == 1 ? '启用' : '禁用'}</a>
+        </div>
+      <else/>
+        <div style="width:300px;margin-left:550px;margin-top:-20px;">
+        <a href="{:U('Type/goods',array('id'=>$vo['id'],'name'=>$vo['tname']))}">修改</a>
+        <a href="{:U('Type/enable',array('status'=>$vo['status'],'id'=>$vo['id'],'childs'=>$vo['childs']))}" onFocus="this.blur()" class="add">{$vo['status'] == 1 ? '启用' : '禁用'}</a>
+        <a href="{:U('Details/edit',array('id'=>$vo['id'],'name'=>$vo['tname']))}">规格参数</a>
+        <a href="{:U('Goods/edit',array('id'=>$vo['id'],'name'=>$vo['tname']))}">基本信息</a>
+       <a href="{:U('Images/index',array('id'=>$vo['id'],'name'=>$vo['tname']))}">商品详情</a>
+       <a href="{:U('Images/edit',array('id'=>$vo['id'],'name'=>$vo['tname']))}">商品展示</a>
+       
+        </div>
+      </if>
+      </foreach>
+    </ul>      
+    <div></div>       
+</block>

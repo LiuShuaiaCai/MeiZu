@@ -1,0 +1,478 @@
+<extend name='Index/index' />
+<block name='title'>
+<title>魅族_商品分类</title>
+</block>
+<block name='css'>
+<link rel="stylesheet" href="__PUBLIC__/Home/css/type.css">
+</block>
+<block name='main'>
+	<div class="container type">
+		<div class="row title">
+			<a href="">首页</a>
+			<span>></span>
+			商品分类
+		</div>
+		<div class="row type_1">
+			<ul>
+				<a href="javascript:void(0)"><li>手机</li></a>
+				<a href="javascript:void(0)"><li>智能硬件</li></a>
+				<a href="javascript:void(0)"><li>耳机/音箱</li></a>
+				<a href="javascript:void(0)"><li>路由器/移动电源</li></a>
+				<a href="javascript:void(0)"><li>保护壳/后盖/贴膜</li></a>
+				<a href="javascript:void(0)"><li>数据线/电源适配器</li></a>
+				<a href="javascript:void(0)"><li>周边硬件</li></a>
+			</ul>
+		</div>
+		<div class="row type_2 display">
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/type1.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/type2.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del></del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/type3.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/type4.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row type_2 hidden">
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/ying1.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/ying2.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del></del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/ying3.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/ying4.jpg" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row type_2 hidden">
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/er1.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/er2.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del></del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/er3.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/er4.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/er5.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/er6.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row type_2 hidden">
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/luyou1.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/luyou2.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del></del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/luyou3.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+		</div>
+		<div class="row type_2 hidden">
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/bao1.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/bao2.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del></del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/bao3.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/bao4.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row type_2 hidden">
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/shu1.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/shu2.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del></del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/shu3.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/shu4.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row type_2 hidden">
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/pei1.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/pei2.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del></del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/pei3.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+
+			<div class="col-md-3 type_3">
+				<div class="type_4">
+					<div class="type_5">
+						<a href="" >
+							<img src="__PUBLIC__/Home/images/pei4.png" alt="">
+						</a>
+					</div>
+					<div class="type_6"><a href="">魅蓝metal </a></div>
+					<div class="type_6"><a href=""><del>¥ 1099</del>&nbsp;&nbsp;&nbsp;<span>¥ 999</span></a></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 热品推荐 -->
+			<div class="container">
+				<div class="row hot">
+					<div class="row hot_1">
+						<div class="hot_2">为您推荐</div>
+						<div class="hot_3">
+							<a href="javascript:void(0)"  id='left'><div><img src="__PUBLIC__/Home/images/arrow-r.png" alt=""></div></a>
+							<a href="javascript:void(0)"  id='right'><div style="margin-right:10px"><img src="__PUBLIC__/Home/images/arrow-l.png" alt=""></div></a>
+						</div>
+					</div>
+					<div class="row2">
+						<div class="row hot_4">
+							<!-- <a href="" class="hot_5 hot_6"><img src="__PUBLIC__/Home/images/hot1.jpg" alt=""></a> -->
+							<a href="" class="hot_5">
+								<img src="__PUBLIC__/Home/images/hot11.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="__PUBLIC__/Home/images/hot2.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="__PUBLIC__/Home/images/hot3.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="__PUBLIC__/Home/images/hot4.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="__PUBLIC__/Home/images/hot5.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="__PUBLIC__/Home/images/hot6.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="__PUBLIC__/Home/images/hot7.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="__PUBLIC__/Home/images/hot8.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="__PUBLIC__/Home/images/hot9.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+							<a href="" class="hot_5">
+								<img src="__PUBLIC__/Home/images/hot10.png" alt="">
+								<div class="hot_7">
+									<h4>魅族移动电源 标准版</h4>
+									<h6>清新百搭 容量充足</h6>
+									<p>￥99</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	</div>
+</block>
+<block name='js'>
+<script src="__PUBLIC__/Home/js/type.js"></script>
+</block>

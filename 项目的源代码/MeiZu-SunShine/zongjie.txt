@@ -1,0 +1,82 @@
+1.实例化model,数据库的增删改查
+M():
+D():
+
+创建数据对象：create()
+添加数据:add()
+修改数据:save()
+删除：delete()
+
+查询数据：
+	select()
+	find()
+	count()
+
+	getField()
+
+where(字符串|数组)	
+	字符串 age = 20 and username like "zhangsan%"
+	数组
+		$where['age'] = 20;
+		$where['age'] = array('gt|lt|eq|neq|egt|elt',50)
+		$where['username'] = array('like','zhang%');
+		$where['age'] = array('between','20,50');
+		$where['age'] = array('in',[20,21,22,23,24])
+limit($page->firstRow,$page->listRows)
+order('age desc')
+field('id,username,age,sex')
+
+MVC
+index.php/Home/Index/index  
+单一入口文件/模块/控制器/方法名
+
+IndexController index display() ->  View/Index/index.html
+
+<foreach name="" item="vo">
+	{$vo.id} {$vo['id']}
+</foreach>
+
+<if condition="$age gt 20">
+
+</if>
+
+{$vo['age']==1 ? '男' : '女'}
+
+page类
+	$page = new \THink\Page('总数据条数'，每页数据条数);
+	$page->show():展示分页代码
+图片处理类
+	$image = new \Think\Image();
+	$image->open()->crop(裁剪的宽，高，起始横坐标，纵坐标)
+					->thumb(缩放宽度，缩放高度，缩放形式)
+					->water(水印图片，图片位置，透明度)
+					->text(文本，字体路径，大小，颜色，字体位置)
+验证码类
+	$verify = new \Think\Verify($config);
+	$verify->entry():生成验证码
+
+	$verify->check(I('post.code')):验证
+文件上传类
+	$config = array(
+		'rootPath' => 'Public/',
+		'savePath' => 'Uploads/'
+	)
+	$upload = new \Think\Upload($config);
+
+	$upload->uploadOne($_FILES['pic']);//单文件上传
+
+	$upload->upload();	// 多文件上传
+
+	$info:上传失败返回false,通过$upload->getError()获取错误信息
+
+
+U('User/index')
+I('get.id','','intval')
+success()
+error()
+
+nav:导航
+header:头部
+footer：尾部
+section：区域
+article：文章

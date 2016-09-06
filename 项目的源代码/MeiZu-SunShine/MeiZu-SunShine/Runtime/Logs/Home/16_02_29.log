@@ -1,0 +1,195 @@
+[ 2016-02-29T10:40:01+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/Home/Login/check?userName=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001578s ]
+SQL: DESCRIBE meizu_user [ RunTime:0.005211s ]
+ERR: 错误的查询条件:[userName=>]
+
+[ 2016-02-29T10:40:01+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/Home/Login/check?userName=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001586s ]
+SQL: DESCRIBE meizu_user [ RunTime:0.003257s ]
+ERR: 错误的查询条件:[userName=>]
+
+[ 2016-02-29T10:40:01+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/Home/Login/check?userName=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001966s ]
+SQL: DESCRIBE meizu_user [ RunTime:0.003448s ]
+ERR: 错误的查询条件:[userName=>]
+
+[ 2016-02-29T10:40:02+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/Home/Login/check?userName=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001304s ]
+SQL: DESCRIBE meizu_user [ RunTime:0.003519s ]
+ERR: 错误的查询条件:[userName=>]
+
+[ 2016-02-29T10:40:28+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Register/check.html?userName=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+SQL: DESCRIBE meizu_user [ RunTime:0.003861s ]
+ERR: 错误的查询条件:[userName=>]
+
+[ 2016-02-29T10:47:46+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Register/check.html?userName=ghjk
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+SQL: DESCRIBE meizu_user [ RunTime:0.003301s ]
+ERR: 错误的查询条件:[userName=>ghjk]
+
+[ 2016-02-29T10:47:53+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Login/check?userName=rtyuiop
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001580s ]
+SQL: DESCRIBE meizu_user [ RunTime:0.003482s ]
+ERR: 错误的查询条件:[userName=>rtyuiop]
+
+[ 2016-02-29T10:47:59+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Login/check?userName=rtyuiop
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001348s ]
+SQL: DESCRIBE meizu_user [ RunTime:0.003123s ]
+ERR: 错误的查询条件:[userName=>rtyuiop]
+
+[ 2016-02-29T10:48:00+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Login/check?userName=rtyuiop
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001560s ]
+SQL: DESCRIBE meizu_user [ RunTime:0.003246s ]
+ERR: 错误的查询条件:[userName=>rtyuiop]
+
+[ 2016-02-29T10:48:00+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Login/check?userName=rtyuiop
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001427s ]
+SQL: DESCRIBE meizu_user [ RunTime:0.003656s ]
+ERR: 错误的查询条件:[userName=>rtyuiop]
+
+[ 2016-02-29T10:48:02+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Login/check?userName=rtyuiop
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001441s ]
+SQL: DESCRIBE meizu_user [ RunTime:0.003371s ]
+ERR: 错误的查询条件:[userName=>rtyuiop]
+
+[ 2016-02-29T10:48:02+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Login/check?userName=rtyuiop
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001924s ]
+SQL: DESCRIBE meizu_user [ RunTime:0.003299s ]
+ERR: 错误的查询条件:[userName=>rtyuiop]
+
+[ 2016-02-29T10:48:02+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Login/check?userName=rtyuiop
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001362s ]
+SQL: DESCRIBE meizu_user [ RunTime:0.003280s ]
+ERR: 错误的查询条件:[userName=>rtyuiop]
+
+[ 2016-02-29T10:48:09+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Login/check?userName=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001301s ]
+SQL: DESCRIBE meizu_user [ RunTime:0.003603s ]
+ERR: 错误的查询条件:[userName=>]
+
+[ 2016-02-29T10:48:16+08:00 ] 127.0.0.1 /xiangmu/MeiZu-SunShine/index.php/Home/Login/check?userName=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+SQL: DESCRIBE meizu_user [ RunTime:0.003372s ]
+ERR: 错误的查询条件:[userName=>]
+
+[ 2016-02-29T14:23:15+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:23:47+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:23:48+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:24:03+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:24:10+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:25:09+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:25:11+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:25:23+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:25:24+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:25:24+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:25:24+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:25:25+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:25:25+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:25:25+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:25:25+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:25:25+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:25:33+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:25:34+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:25:34+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:25:34+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:25:34+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:25:35+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:25:35+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:29:46+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2016-02-29T14:32:28+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003680s ]
+ERR: 没有定义数据库配置
+
+[ 2016-02-29T14:32:32+08:00 ] 127.0.0.1 /MeiZu-SunShine/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+ERR: 没有定义数据库配置
+

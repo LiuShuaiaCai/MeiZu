@@ -1,0 +1,41 @@
+
+<extend name="Public/base" />
+<block name="title">热门问题列表</block>
+<block name="main">
+  <div class="panel-body">
+       <div class="table-responsive">
+       	    <form>
+             问题搜索：<input type="text" name="title" value="">
+                     <input type="submit" value="查询">
+            </form>
+            <table class="table">
+            <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>标题</th>
+                    <th>内容</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <foreach name='data' item='vo' >
+                <tr class="success">
+                    <td width="50">{$vo['id']}</td>
+                    <td width="425">{$vo['title']}</td>
+                    <td width="425">{$vo['content']}</td>
+                    <td>
+                    <a href="{:U('Question/edit',array('id'=>$vo['id']))}">修改</a>
+                    <span>|</span>
+                    <a href="{:U('Question/del',array('id'=>$vo['id']))}">删除</a>
+                   
+                    </td>
+                </tr>
+            </foreach>
+            <tr>
+                <td colspan="5">{$show}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>   						
+       						                  
+</block>

@@ -1,0 +1,61 @@
+<extend name="Public/base" />
+
+<block name="title">完善商品</block>
+<block name="main">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            添加板块
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-6">
+                    <form  action="{:U('Goods/update')}"  method="post" role="form" enctype="multipart/form-data">
+                    <input type="hidden" name="id" value="{$data['id']}">    
+                        <div class="form-group">
+                            <label>商品id{$data['tid']}</label>
+                        </div>
+                        <div class="form-group">
+                            <label>商品名称</label>
+                            
+                            <input type="text" name="gname" value="{:I('get.name')}" class="form-control">
+                           <!-- <input type="text" name="tname" value="{$data['gname']}" class="form-control">-->
+                        </div>
+                        <div class="form-group">
+                            <label>商品状态</label>
+                            <select class="form-control" name="status" id="status">  
+                                <option value="1" {$data['status']==1 ? 'selected' : ''}>上架</option>
+                                <option value="2" {$data['status']==2 ? 'selected' : ''}>下架</option>
+                            </select>
+                        </div> 
+                        <div class="form-group">
+                            <label>热卖商品</label>
+                            <select class="form-control" name="hot" id="hot">  
+                                <option value="1" {$data['hot']==1 ? 'selected' : ''}>强力推荐</option>
+                                <option value="2" {$data['hot']==2 ? 'selected' : ''}>新品</option>
+                            </select>
+                        </div> 
+                        <div class="form-group">
+                            <label>商品价格</label>
+                            <input type="text" name="price" value="{$data['price']}" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>商品数量</label>
+                            <input type="text" name="num" value="{$data['num']}" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>商品描述</label>
+                            <textarea class="form-control" rows="3" name="desc" >{$data['desc']}</textarea>
+                        </div> 
+                        <div class="form-group">
+                            <label>商品图像</label>
+                            <input type="file" name="pic" value="{$data['pic']}" class="form-control">
+                        </div>
+                        <input type="hidden" name="addtime" value="{:time()}">
+                        <button type="submit" class="btn btn-default">提交</button>
+                        <button type="reset" class="btn btn-default">重置</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</block>

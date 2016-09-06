@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+   
+	<h3>{$data[title]}的权限</h3>
+
+	<form action="{:U('Authgroup/showrule')}" method="post">
+        <input type="hidden" name="id" value="{$data[id]}">
+        <foreach name="res" item="vo">
+        <input type="checkbox" name="rules[]" value="{$vo['id']}" {:in_array($vo['id'],$arr)?'checked':'' }> {$vo['title']}<br>
+        
+        </foreach>
+        <input type="submit" value="提交">
+	</form>
+</body>
+</html>
